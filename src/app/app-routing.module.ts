@@ -1,3 +1,4 @@
+import { TestComponent } from './user/test/test.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegistrationComponent } from './user/user-registration/user-registration.component';
 import { StudentDetailsComponent } from './admin/student-details/student-details.component';
@@ -14,7 +15,8 @@ const routes: Routes = [{path: 'home', component: HomeComponent},
 {path:'company-details', component:CompanyDetailsComponent},
 {path:'student-details', component:StudentDetailsComponent},
 {path:'registration', component:UserRegistrationComponent},
-{path:'user-login', component:UserLoginComponent}];
+{path:'user-login', component:UserLoginComponent},
+{path:'test', component:TestComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,1 +1,24 @@
-<p>test works!</p>
+<span>Time Elapsed : {{displayTimeElapsed()}}</span>
+<br>
+{{score}}
+<br>
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" [style.width.%]="(qProgress+1)*10" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<span>key={{questions.length}}</span>
+
+<div *ngIf="questions" class="container">
+            <div class="container-fluid">
+              <h5 class="card-title">{{qProgress+1}}</h5>
+              <p class="card-text">{{questions[qProgress].question}}</p>
+            </div>
+</div>
+
+<div (click)="answer(0)" [ngClass]="{green:selectedOptions[0]}">{{questions[qProgress].optionA}}</div>
+<div (click)="answer(1)" [ngClass]="{green:selectedOptions[1]}">{{questions[qProgress].optionB}}</div>
+<div (click)="answer(2)" [ngClass]="{green:selectedOptions[2]}">{{questions[qProgress].optionC}}</div>
+<div (click)="answer(3)" [ngClass]="{green:selectedOptions[3]}">{{questions[qProgress].optionD}}</div>
+<button (click)="nav(false)">back</button>&nbsp;&nbsp;&nbsp;<button [ngClass]="{hide:hideNext}"(click)="nav(true)">next</button>
+<button [ngClass]="{hide:hideSubmit}" (click)="submitTest()">submit</button>
+<div *ngIf="score"> {{score}}</div>
