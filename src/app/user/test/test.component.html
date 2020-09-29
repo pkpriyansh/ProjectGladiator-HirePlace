@@ -1,24 +1,64 @@
-<span>Time Elapsed : {{displayTimeElapsed()}}</span>
-<br>
-{{score}}
-<br>
+<div [ngClass]="{hide:isGivingTestFirstTime}">
+  <div [ngClass]="{hide:hideTest}" >
 
-<div class="progress">
-  <div class="progress-bar" role="progressbar" [style.width.%]="(qProgress+1)*10" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+
+        <div class="timer-container">
+          <span>Time Elapsed : {{displayTimeElapsed()}}</span>
+        </div>
+
+
+        <div class="progress progress2">
+          <div class="progress-bar" role="progressbar" [style.width.%]="seconds/18" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+
+        <div class="container-nav">
+          <div *ngFor="let q of questions;index as i" (click)="indexSelect(i)">
+            <button class="button">{{i+1}}</button>
+          </div>
+        </div>
+
+  
+        <div *ngIf="questions" class="questions">
+          <div>
+            {{qProgress+1}}. {{questions[qProgress].question}}
+          </div>
+        </div>
+        <div class="options">
+          <div (click)="answer(0)" [ngClass]="{green:selectedOptions[0], option:true}">A- {{questions[qProgress].optionA}}</div>
+          <div (click)="answer(1)" [ngClass]="{green:selectedOptions[1],option:true}">B- {{questions[qProgress].optionB}}</div>
+          <div (click)="answer(2)" [ngClass]="{green:selectedOptions[2],option:true}">C- {{questions[qProgress].optionC}}</div>
+          <div (click)="answer(3)" [ngClass]="{green:selectedOptions[3],option:true}">D- {{questions[qProgress].optionD}}</div>
+        </div>
+        <div class="nav-buttons">
+          <button (click)="nav(false)"[ngClass]="{hide:hideBack, left:true}">back</button><button [ngClass]="{hide:hideNext, right:true}"(click)="nav(true)">next</button>
+          <button [ngClass]="{hide:hideSubmit,right:true}" (click)="submitTest()">submit</button>
+        </div>
+      
+  </div>
+  
+  <div [ngClass]="{hide:!hideTest, output:true}">
+      <div class="score">
+        <h1>your Score is : {{score}}</h1>
+      </div>
+      <div class="nav-buttons">
+        <button (click)="nextTest()" [ngClass]="{hide:(!isPassed||isLevel4)}">next Level</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button routerLink='/home'>logout</button>
+      </div>
+  </div>
 </div>
-<span>key={{questions.length}}</span>
 
-<div *ngIf="questions" class="container">
-            <div class="container-fluid">
-              <h5 class="card-title">{{qProgress+1}}</h5>
-              <p class="card-text">{{questions[qProgress].question}}</p>
-            </div>
+
+<div [ngClass]="{hide:!isGivingTestFirstTime, output:true}">
+      <h3>Test Details</h3>
+      <div class="list">
+        <ul>
+          <li>First Point</li>
+          <li>Second Point</li>
+          <li>Third Point</li>
+          <li>Fourth Point</li>
+          <li>Fifth Point</li>
+        </ul>
+        <button (click)="startTest()">start test</button>
+      </div>
 </div>
-
-<div (click)="answer(0)" [ngClass]="{green:selectedOptions[0]}">{{questions[qProgress].optionA}}</div>
-<div (click)="answer(1)" [ngClass]="{green:selectedOptions[1]}">{{questions[qProgress].optionB}}</div>
-<div (click)="answer(2)" [ngClass]="{green:selectedOptions[2]}">{{questions[qProgress].optionC}}</div>
-<div (click)="answer(3)" [ngClass]="{green:selectedOptions[3]}">{{questions[qProgress].optionD}}</div>
-<button (click)="nav(false)">back</button>&nbsp;&nbsp;&nbsp;<button [ngClass]="{hide:hideNext}"(click)="nav(true)">next</button>
-<button [ngClass]="{hide:hideSubmit}" (click)="submitTest()">submit</button>
-<div *ngIf="score"> {{score}}</div>

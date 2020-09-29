@@ -7,9 +7,15 @@ import { Questions } from './questions';
   providedIn: 'root'
 })
 export class UserService {
-  baseUrl:string="http://localhost:3000/questions";
+  baseUrl:string="http://localhost:3000/";
   constructor(private http:HttpClient) { }
-  getAllQuestions():Observable<Questions[]>{
-    return this.http.get<Questions[]>(this.baseUrl);
+  getAllLevel1Questions():Observable<Questions[]>{
+    return this.http.get<Questions[]>(this.baseUrl+"questions1");
+  }
+  getAllLevel2Questions():Observable<Questions[]>{
+    return this.http.get<Questions[]>(this.baseUrl+"questions2");
+  }
+  getAllLevel3Questions():Observable<Questions[]>{
+    return this.http.get<Questions[]>(this.baseUrl+"questions3");
   }
 }

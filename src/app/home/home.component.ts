@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, Routes } from '@angular/router';
+import { ActivatedRoute, Router, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +8,17 @@ import { Router, Routes } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private  router:Router) { }
+  testId:number;
+  constructor(private  router:Router, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    let id= this.route.snapshot.paramMap.get('id');
+
+    this.testId = parseInt(id);
+    
+    localStorage.setItem("testid",id);
+    
+
   }
   admin(){
     this.router.navigate(['adminLogin'])

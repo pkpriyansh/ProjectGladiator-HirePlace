@@ -1,6 +1,159 @@
-.green{
+
+
+.timer-container{
+    text-align: center;
+    background-color: #133b5c;
+    font-size: 2.5em;
+    color: white;
+}
+.progress2{
+    margin-top: 20px;
+     margin-bottom: 20px;
+}
+.timer-container  span{
+    padding-top:4px;
+    padding-bottom: 8px;
+}
+.container-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(236, 234, 234);
+    height: 50px;
+
+  }
+  .questions{
+      margin-top: 10px;
+      margin-bottom: 50px;
+      height: 50px;
+      background-color: rgb(236, 234, 234);
+  }
+  .button {
+    background-color:  #133b5c; 
+    border: none;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .container-nav>div{
+      margin-left: 2.75px;
+      margin-right: 2.75px;
+      margin-top: 9px;
+  }
+  .container-nav>div> button{
+      display: block;
+      width: 40px;
+  }
+  .options>.green{
     background-color: green;
 }
+.option{
+    
+    padding: 5px;
+    background-color: #133b5c;
+    color: beige;
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 40%;
+  }
+  .option:hover{
+      cursor: pointer;
+  }
+
+  .nav-buttons{
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+  }
+  .nav-buttons>button{
+    display: block;
+    background-color:  #133b5c; 
+    border: none;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .nav-buttons>.left{
+      margin-left: 10px;
+
+  }
+  .nav-buttons>.right{
+      margin-right: 30%;
+      margin-left: 10px;
+  }
+  .nav-buttons>.hide{
+    display: none;
+}
+  .output{
+      position: absolute;
+      left: 30%;
+      top: 20%;
+      background-color: #133b5c;
+      height: 350px;
+      width: 600px;
+  }
+  .output>.score{
+      margin-left: 25%;
+      margin-top: 25%;
+      color: white;
+  }
+  .output>.nav-buttons{
+      margin-left: 45%;
+  }
+  .output>.nav-buttons>button{
+    display: block;
+    background-color:  white; 
+    border: none;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .output>.nav-buttons>.hide{
+    display: none;
+  }
+  .output>h3{
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+  }
+  .output>.list{
+      color: white;
+      margin-left: 20px;
+      margin-top: 20px;
+  }
+  .output>.list>button{
+    display: block;
+    background-color:  white; 
+    border: none;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 40%;
+  }
 .hide{
     display: none;
 }

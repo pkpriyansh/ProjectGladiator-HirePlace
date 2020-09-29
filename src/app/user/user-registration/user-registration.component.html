@@ -1,1 +1,133 @@
-<p>user-registration works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-10">
+        
+            <div class="jumbotron">
+                <h2>REGISTRATION FORM:</h2>
+            <pre>
+
+            </pre>
+            <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && onSubmit()">
+                <div class="form-group">
+                    
+                <label for="fullName">Full Name:</label>
+                <input class="form-control input-validation-error" type="text" name="fullName" id="fullName" formControlName="fullName" [ngClass]="{'is-invalid':
+                registerForm.get('fullName').touched && registerForm.get('fullName').invalid}">
+                <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.fullName.invalid && 
+                    (registerForm.controls.fullName.touched || registerForm.controls.fullName.dirty)">
+                    <h6>*Full name is required</h6>
+                    </div>
+                </div>
+                <div class="form-group">
+                    
+                 <label for="email">Email-Id:</label>
+                 <input class="form-control input-validation-error" type="email" name="email" id="email" formControlName="email" [ngClass]="{'is-invalid':
+                 registerForm.get('email').touched && registerForm.get('email').invalid}">
+                 <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.email.invalid && 
+                    (registerForm.controls.email.touched || registerForm.controls.email.dirty)">
+                    <h6>*Valid Email-Id is required</h6>
+                    </div>
+                </div>
+                <div class="form-group">
+                    
+                <label for="mobile">Mobile Number:</label>
+                <input class="form-control input-validation-error" type="number" name="mobile" id="mobile" formControlName="mobile" [ngClass]="{'is-invalid':
+                registerForm.get('mobile').touched && registerForm.get('mobile').invalid}">
+                <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.mobile.invalid && 
+                    (registerForm.controls.mobile.touched || registerForm.controls.mobile.dirty)">       
+                     <h6>*Valid Mobile Number is required</h6>      
+                    </div>
+                </div>
+                <div class="form-group">
+                   
+                <label for="city">City:</label>
+                <input class="form-control input-validation-error" type="text" name="city" id="city" formControlName="city"[ngClass]="{'is-invalid':
+                 registerForm.get('city').touched && registerForm.get('city').invalid}" >
+                 <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.city.invalid && 
+                 (registerForm.controls.city.touched || registerForm.controls.city.dirty)">       
+                  <h6>*City is required</h6>      
+                 </div>
+                </div>
+                <div class="form-group">
+                    
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input class="form-control input-validation-error" type="date" name="dateOfBirth" id="dateOfBirth" formControlName="dateOfBirth" [ngClass]="{'is-invalid':
+                registerForm.get('dateOfBirth').touched && registerForm.get('dateOfBirth').invalid}">
+                <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.dateOfBirth.invalid && 
+                    (registerForm.controls.dateOfBirth.touched || registerForm.controls.dateOfBirth.dirty)">       
+                    <h6>*Date of birth is required</h6>      
+                    </div>
+                </div>
+    <div class="form-group">
+        
+        <label for="state">State:</label>
+        <input class="form-control input-validation-error" type="text" name="state" id="state" formControlName="state" [ngClass]="{'is-invalid':
+        registerForm.get('state').touched && registerForm.get('state').invalid}">
+        <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.state.invalid && 
+                    (registerForm.controls.state.touched || registerForm.controls.state.dirty)">       
+                     <h6>*State is required</h6>      
+            </div>
+    </div>
+    <div class="form-group">
+        
+        <label for="qualification">Qualification:</label>
+        <input class="form-control input-validation-error" type="text" name="qualification" id="qualification" formControlName="qualification" [ngClass]="{'is-invalid':
+        registerForm.get('qualification').touched && registerForm.get('qualification').invalid}">
+        <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.qualification.invalid && 
+                    (registerForm.controls.qualification.touched || registerForm.controls.qualification.dirty)">       
+                     <h6>*Qualification is required</h6>      
+            </div>
+    </div>
+    <div class="form-group">
+       
+        <label for="yearOfCompletion">Year Of Completion:</label>
+        <input class="form-control input-validation-error" type="number" name="yearOfCompletion" id="yearOfCompletion" formControlName="yearOfCompletion" [ngClass]="{'is-invalid':
+        registerForm.get('yearOfCompletion').touched && registerForm.get('yearOfCompletion').invalid}">
+        <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.yearOfCompletion.invalid && 
+        (registerForm.controls.yearOfCompletion.touched || registerForm.controls.yearOfCompletion.dirty)">       
+         <h6>*Year Of Completion is required</h6>      
+</div>
+    </div>
+    <div class="form-group">
+        
+        <label for="password">Enter Password:</label>
+        <input class="form-control input-validation-error" name="password" id="password" type="password" formControlName="password" [ngClass]="{'is-invalid':
+        registerForm.get('password').touched && registerForm.get('password').invalid}">
+        <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.password.invalid && 
+        (registerForm.controls.password.touched || registerForm.controls.password.dirty)">       
+                    <h6>*Valid Password is required</h6>
+        </div>
+        
+    </div>
+    <div class="form-group">
+        
+        <label for="confirmPassword">Confirm Password:</label>
+        <input class="form-control input-validation-error" name="confirmPassword" id="confirmPassword" type="text" formControlName="confirmPassword" [ngClass]="{'is-invalid':
+        registerForm.get('confirmPassword').touched && registerForm.get('confirmPassword').invalid}">
+        <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.confirmPassword.invalid && 
+        (registerForm.controls.confirmPassword.touched || registerForm.controls.confirmPassword.dirty)">       
+                    <h6>*Confirm Password is required</h6>    
+        </div>
+        
+    </div>
+    <div class="form-group">
+       
+            <label for="captcha">Captcha:</label>
+            <input class="form-control input-validation-error" id="captcha" name="captcha" type="text" formControlName="captcha" [ngClass]="{'is-invalid':
+            registerForm.get('captcha').touched && registerForm.get('captcha').invalid}"> 
+            <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.captcha.invalid && 
+            (registerForm.controls.captcha.touched || registerForm.controls.captcha.dirty)">       
+             <h6>*Captcha is required</h6>      
+    </div>
+       </div>
+        
+
+    <div class="text-center">
+        <button class="btn btn-primary" [disabled]="registerForm.invalid">Register</button>   
+        </div> 
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+   

@@ -10,6 +10,5 @@ export class AppComponent {
   title = 'onlineExamSystem';
   constructor(private routes:Router ){}
   ngOnInit(): void {
-    this.routes.navigate(['home']);
   }
 }

@@ -1,7 +1,97 @@
 {
-    "questions":[
+    "questions1":[
        {
         "id": "1",
+        "question": "Which of the following option leads to the portability and security of Java?",
+        "optionA":"Bytecode is executed by JVM ",
+        "optionB": "The applet makes the Java code secure and portable",
+        "optionC": "Use of exception handling ",
+        "optionD": "Dynamic binding between objects",
+        "correctoption":"1"
+       },
+       {
+        "id": "2",
+        "question": "Which of the following is not a Java features?",
+        "optionA":"Dynamic",
+        "optionB": "Architecture Neutral",
+        "optionC": "Use of pointers",
+        "optionD": "Object-oriented",
+        "correctoption":"3"
+       },
+       {
+        "id": "3",
+        "question": "The \u0021 article referred to as a",
+        "optionA":"Unicode escape sequence",
+        "optionB": "Octal escape",
+        "optionC": "Hexadecimal",
+        "optionD": "Line feed",
+        "correctoption":"1"
+       },
+       {
+        "id": "4",
+        "question": " _____ is used to find and fix bugs in the Java programs.",
+        "optionA":"JVM",
+        "optionB": "JRE",
+        "optionC": "JDK",
+        "optionD": "JDB",
+        "correctoption":"4"
+       },
+       {
+        "id": "5",
+        "question": "What is the return type of the hashCode() method in the Object class?",
+        "optionA":"Object",
+        "optionB": "int",
+        "optionC": "long",
+        "optionD": "void",
+        "correctoption":"2"
+       },
+       {
+        "id": "6",
+        "question": " Which of the following is a valid long literal?",
+        "optionA":"ABH8097",
+        "optionB": "L990023",
+        "optionC": "904423",
+        "optionD": "0xnf029L",
+        "correctoption":"4"
+       },
+       {
+        "id": "7",
+        "question": "7Which of the following is not a Java features?",
+        "optionA":"Bytecode is executed by JVM fgsff",
+        "optionB": "The applet makes the Java gsfgcode secure and portable",
+        "optionC": "bdfbbUse of exception handling dsgasd",
+        "optionD": "vavbdfbDynamic binding between objects",
+        "correctoption":"1"
+       },
+       {
+        "id": "8",
+        "question": "7Which of the following is not a Java features?",
+        "optionA":"Bytecode is executed by JVMfdsfsdv",
+        "optionB": "gdfbbThe applet makes the dvssJava code secure and portable",
+        "optionC": "Use of exception dsfsfvdsvhandling ",
+        "optionD": "Dynamic binding between objects",
+        "correctoption":"1"
+       },
+       {
+        "id": "9",
+        "question": "8Which of the following is not a Java features?",
+        "optionA":"hesegegBytecode is executed by JVM",
+        "optionB": "gbdgThe applet makes thedvDSVds Java code secure and portable",
+        "optionC": "hdfhUse of exceptiondszvsdgv handling ",
+        "optionD": "Dynamic binding vsvsvbetween objects",
+        "correctoption":"1"
+       },
+       {
+        "id": "10",
+        "question": "8Which of the followingdsvzfsdb is not a Java features?",
+        "optionA":"hesegegBytecode is executed by JVM",
+        "optionB": "gbdgThe applet makes the Java code secure and portable",
+        "optionC": "hdfhUse of exception handling ",
+        "optionD": "Dynamic binding between objects",
+        "correctoption":"1"
+       },
+       {
+        "id": "11",
         "question": "1Which of the following is not a Java features?",
         "optionA":"fbdbBytecode is executed by JVM ",
         "optionB": "The applet makes the Java code secure and portable",
@@ -10,7 +100,7 @@
         "correctoption":"1"
        },
        {
-        "id": "2",
+        "id": "12",
         "question": "2Which of the following is not a Java features?",
         "optionA":"Bytecode is executed by JVM",
         "optionB": "dfbdbdThe applet makes the Java code secure and portable",
@@ -19,16 +109,16 @@
         "correctoption":"1"
        },
        {
-        "id": "3",
-        "question": "3Which of the following is not a Java features?",
+        "id": "13",
+        "question": "3Which of the vzdsvzdfvvdszvzsbvzfollowing is not a Java features?",
         "optionA":"Bytecode is executed by JVM",
         "optionB": "fgdfbbThe applet makes the Java code secure and portable",
-        "optionC": "fgdbUse of exception handling ",
+        "optionC": "fgdbUse ofbzdbzdbz exception handling ",
         "optionD": "Dynamic binding between objects",
         "correctoption":"1"
        },
        {
-        "id": "4",
+        "id": "14",
         "question": "4Which of the following is not a Java features?",
         "optionA":"bgdffbbBytecode is executed by JVM",
         "optionB": "The applet makes the Java code secure and portable",
@@ -37,16 +127,16 @@
         "correctoption":"1"
        },
        {
-        "id": "5",
+        "id": "15",
         "question": "5Which of the following is not a Java features?",
-        "optionA":"Bytecode is executed by JVM",
+        "optionA":"Bytecode is  vz z zv  executed by JVM",
         "optionB": "bfdbdbThe applet makes the Java code secure and portable",
         "optionC": "Use of exception handling ",
         "optionD": "Dynamic binding between objects",
         "correctoption":"1"
        },
        {
-        "id": "6",
+        "id": "16",
         "question": "6Which of the following is not a Java features?",
         "optionA":"Bytecode is executed by JVM",
         "optionB": "The applet makes the Java code secure and portable",
@@ -55,17 +145,17 @@
         "correctoption":"1"
        },
        {
-        "id": "7",
-        "question": "7Which of the following is not a Java features?",
+        "id": "17",
+        "question": "7Which of bdfbzdbthe following is not a Java features?",
         "optionA":"Bytecode is executed by JVM",
-        "optionB": "The applet makes the Java code secure and portable",
+        "optionB": "The appleakes the Java code secure and portable",
         "optionC": "bdfbbUse of exception handling ",
         "optionD": "vavbdfbDynamic binding between objects",
         "correctoption":"1"
        },
        {
-        "id": "8",
-        "question": "7Which of the following is not a Java features?",
+        "id": "18",
+        "question": "7Which of thedfbdz following is not a Java features?",
         "optionA":"Bytecode is executed by JVM",
         "optionB": "gdfbbThe applet makes the Java code secure and portable",
         "optionC": "Use of exception handling ",
@@ -73,8 +163,8 @@
         "correctoption":"1"
        },
        {
-        "id": "9",
-        "question": "8Which of the following is not a Java features?",
+        "id": "19",
+        "question": "8Which of thebdfbd following is not a Java features?",
         "optionA":"hesegegBytecode is executed by JVM",
         "optionB": "gbdgThe applet makes the Java code secure and portable",
         "optionC": "hdfhUse of exception handling ",
@@ -82,13 +172,467 @@
         "correctoption":"1"
        },
        {
-        "id": "10",
-        "question": "8Which of the following is not a Java features?",
+        "id": "20",
+        "question": "fbdfb8Which of the following is not a Java features?",
         "optionA":"hesegegBytecode is executed by JVM",
         "optionB": "gbdgThe applet makes the Java code secure and portable",
         "optionC": "hdfhUse of exception handling ",
         "optionD": "Dynamic binding between objects",
         "correctoption":"1"
-       }
-    ]
+       },
+       {
+         "id": "1",
+         "question": "1Which bdgbof the following is not a Java features?",
+         "optionA":"fbdbBytecode is executed by JVM ",
+         "optionB": "The applet makes the Java code secure and portable",
+         "optionC": "fgfbUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "2",
+         "question": "2Which ofbdgb the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "dfbdbdThe applet makes the Java code secure and portable",
+         "optionC": "gsdgbUse of exception handling",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "3",
+         "question": "3Which of thefdsbdxb following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "fgdfbbThe applet makes the Java code secure and portable",
+         "optionC": "fgdbUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "4",
+         "question": "4Which of thebgdbxgfbn following is not a Java features?",
+         "optionA":"bgdffbbBytecode is executed by JVM",
+         "optionB": "The applet makes the Java code secure and portable",
+         "optionC": "gfdbdbgUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "5",
+         "question": "5Which ofbfdbd the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "bfdbdbThe applet makes the Java code secure and portable",
+         "optionC": "Use of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "6",
+         "question": "6Which of bdssgbthe following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "The applet makes the Java code secure and portable",
+         "optionC": "bfdbdbUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "7",
+         "question": "7Which ofdbfdbdb the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "The applet makes the Java code secure and portable",
+         "optionC": "bdfbbUse of exception handling ",
+         "optionD": "vavbdfbDynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "8",
+         "question": "7Which ofbdgxngd the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "gdfbbThe applet makes the Java code secure and portable",
+         "optionC": "Use of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "9",
+         "question": "8Which ofbdfb the following is not a Java features?",
+         "optionA":"hesegegBytecode is executed by JVM",
+         "optionB": "gbdgThe applet makes the Java code secure and portable",
+         "optionC": "hdfhUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "10",
+         "question": "8Which of the bfdbxfbfollowing is not a Java features?",
+         "optionA":"hesegegBytecode is executed by JVM",
+         "optionB": "gbdgThe applet makes the Java code secure and portable",
+         "optionC": "hdfhUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        }
+    ],
+    "questions2":[
+        {
+         "id": "1",
+         "question": "level2Which of the following is not a Java features?",
+         "optionA":"fbdbBytecode is executed by JVM ",
+         "optionB": "The applet makes the Java code secure and portable",
+         "optionC": "fgfbUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "2",
+         "question": "level22Which of the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "dfbdbdThe applet makes the Java code secure and portable",
+         "optionC": "gsdgbUse of exception handling",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "3",
+         "question": "level23Which of the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "fgdfbbThe applet makes the Java code secure and portable",
+         "optionC": "fgdbUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "4",
+         "question": "level24Which of the following is not a Java features?",
+         "optionA":"bgdffbbBytecode is executed by JVM",
+         "optionB": "The applet makes the Java code secure and portable",
+         "optionC": "gfdbdbgUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "5",
+         "question": "level25Which of the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "bfdbdbThe applet makes the Java code secure and portable",
+         "optionC": "Use of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "6",
+         "question": "level26Which of the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "The applet makes the Java code secure and portable",
+         "optionC": "bfdbdbUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "7",
+         "question": "level27Which of the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "The applet makes the Java code secure and portable",
+         "optionC": "bdfbbUse of exception handling ",
+         "optionD": "vavbdfbDynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "8",
+         "question": "level27Which of the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "gdfbbThe applet makes the Java code secure and portable",
+         "optionC": "Use of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "9",
+         "question": "level28Which of the following is not a Java features?",
+         "optionA":"hesegegBytecode is executed by JVM",
+         "optionB": "gbdgThe applet makes the Java code secure and portable",
+         "optionC": "hdfhUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "10",
+         "question": "level28Which of the following is not a Java features?",
+         "optionA":"hesegegBytecode is executed by JVM",
+         "optionB": "gbdgThe applet makes the Java code secure and portable",
+         "optionC": "hdfhUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "11",
+         "question": "level21Which of the following is not a Java features?",
+         "optionA":"fbdbBytecode is executed by JVM ",
+         "optionB": "The applet makes the Java code secure and portable",
+         "optionC": "fgfbUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "12",
+         "question": "2Which of the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "dfbdbdThe applet makes the Java code secure and portable",
+         "optionC": "gsdgbUse of exception handling",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "13",
+         "question": "level23Which of the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "fgdfbbThe applet makes the Java code secure and portable",
+         "optionC": "fgdbUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "14",
+         "question": "4Which of the following is not a Java features?",
+         "optionA":"bgdffbbBytecode is executed by JVM",
+         "optionB": "The applet makes the Java code secure and portable",
+         "optionC": "gfdbdbgUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "15",
+         "question": "5Which of the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "bfdbdbThe applet makes the Java code secure and portable",
+         "optionC": "Use of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "16",
+         "question": "6Which of the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "The applet makes the Java code secure and portable",
+         "optionC": "bfdbdbUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "17",
+         "question": "7Which of the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "The applet makes the Java code secure and portable",
+         "optionC": "bdfbbUse of exception handling ",
+         "optionD": "vavbdfbDynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "18",
+         "question": "7Which of the following is not a Java features?",
+         "optionA":"Bytecode is executed by JVM",
+         "optionB": "gdfbbThe applet makes the Java code secure and portable",
+         "optionC": "Use of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "19",
+         "question": "8Which of the following is not a Java features?",
+         "optionA":"hesegegBytecode is executed by JVM",
+         "optionB": "gbdgThe applet makes the Java code secure and portable",
+         "optionC": "hdfhUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        },
+        {
+         "id": "20",
+         "question": "8Which of the following is not a Java features?",
+         "optionA":"hesegegBytecode is executed by JVM",
+         "optionB": "gbdgThe applet makes the Java code secure and portable",
+         "optionC": "hdfhUse of exception handling ",
+         "optionD": "Dynamic binding between objects",
+         "correctoption":"1"
+        }
+     ],
+     "questions3":[
+      {
+       "id": "1",
+       "question": "level3Which of the following is not a Java features?",
+       "optionA":"fbdbBytecode is executed by JVM ",
+       "optionB": "The applet makes the Java code secure and portable",
+       "optionC": "fgfbUse of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "2",
+       "question": "level3Which of the following is not a Java features?",
+       "optionA":"Bytecode is executed by JVM",
+       "optionB": "dfbdbdThe applet makes the Java code secure and portable",
+       "optionC": "gsdgbUse of exception handling",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "3",
+       "question": "level3Which of the following is not a Java features?",
+       "optionA":"Bytecode is executed by JVM",
+       "optionB": "fgdfbbThe applet makes the Java code secure and portable",
+       "optionC": "fgdbUse of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "4",
+       "question": "level3Which of the following is not a Java features?",
+       "optionA":"bgdffbbBytecode is executed by JVM",
+       "optionB": "The applet makes the Java code secure and portable",
+       "optionC": "gfdbdbgUse of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "5",
+       "question": "level3Which of the following is not a Java features?",
+       "optionA":"Bytecode is executed by JVM",
+       "optionB": "bfdbdbThe applet makes the Java code secure and portable",
+       "optionC": "Use of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "6",
+       "question": "level3Which of the following is not a Java features?",
+       "optionA":"Bytecode is executed by JVM",
+       "optionB": "The applet makes the Java code secure and portable",
+       "optionC": "bfdbdbUse of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "7",
+       "question": "level3Which of the following is not a Java features?",
+       "optionA":"Bytecode is executed by JVM",
+       "optionB": "The applet makes the Java code secure and portable",
+       "optionC": "bdfbbUse of exception handling ",
+       "optionD": "vavbdfbDynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "8",
+       "question": "7Which of the following is not a Java features?",
+       "optionA":"Bytecode is executed by JVM",
+       "optionB": "gdfbbThe applet makes the Java code secure and portable",
+       "optionC": "Use of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "9",
+       "question": "8Which of the following is not a Java features?",
+       "optionA":"hesegegBytecode is executed by JVM",
+       "optionB": "gbdgThe applet makes the Java code secure and portable",
+       "optionC": "hdfhUse of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "10",
+       "question": "8Which of the following is not a Java features?",
+       "optionA":"hesegegBytecode is executed by JVM",
+       "optionB": "gbdgThe applet makes the Java code secure and portable",
+       "optionC": "hdfhUse of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "11",
+       "question": "1Which of the following is not a Java features?",
+       "optionA":"fbdbBytecode is executed by JVM ",
+       "optionB": "The applet makes the Java code secure and portable",
+       "optionC": "fgfbUse of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "12",
+       "question": "2Which of the following is not a Java features?",
+       "optionA":"Bytecode is executed by JVM",
+       "optionB": "dfbdbdThe applet makes the Java code secure and portable",
+       "optionC": "gsdgbUse of exception handling",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "13",
+       "question": "3Which of the following is not a Java features?",
+       "optionA":"Bytecode is executed by JVM",
+       "optionB": "fgdfbbThe applet makes the Java code secure and portable",
+       "optionC": "fgdbUse of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "14",
+       "question": "4Which of the following is not a Java features?",
+       "optionA":"bgdffbbBytecode is executed by JVM",
+       "optionB": "The applet makes the Java code secure and portable",
+       "optionC": "gfdbdbgUse of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "15",
+       "question": "5Which of the following is not a Java features?",
+       "optionA":"Bytecode is executed by JVM",
+       "optionB": "bfdbdbThe applet makes the Java code secure and portable",
+       "optionC": "Use of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "16",
+       "question": "6Which of the following is not a Java features?",
+       "optionA":"Bytecode is executed by JVM",
+       "optionB": "The applet makes the Java code secure and portable",
+       "optionC": "bfdbdbUse of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "17",
+       "question": "7Which of the following is not a Java features?",
+       "optionA":"Bytecode is executed by JVM",
+       "optionB": "The applet makes the Java code secure and portable",
+       "optionC": "bdfbbUse of exception handling ",
+       "optionD": "vavbdfbDynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "18",
+       "question": "7Which of the following is not a Java features?",
+       "optionA":"Bytecode is executed by JVM",
+       "optionB": "gdfbbThe applet makes the Java code secure and portable",
+       "optionC": "Use of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "19",
+       "question": "8Which of the following is not a Java features?",
+       "optionA":"hesegegBytecode is executed by JVM",
+       "optionB": "gbdgThe applet makes the Java code secure and portable",
+       "optionC": "hdfhUse of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      },
+      {
+       "id": "20",
+       "question": "level3Which of the following is not a Java features?",
+       "optionA":"hesegegBytecode is executed by JVM",
+       "optionB": "gbdgThe applet makes the Java code secure and portable",
+       "optionC": "hdfhUse of exception handling ",
+       "optionD": "Dynamic binding between objects",
+       "correctoption":"1"
+      }
+   ]
 }

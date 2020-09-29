@@ -1,4 +1,3 @@
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,12 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private route:Router) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-  login(){
-    this.route.navigate(['admin-area']);
   }
 
 }

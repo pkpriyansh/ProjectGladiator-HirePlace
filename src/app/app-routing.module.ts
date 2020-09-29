@@ -1,22 +1,28 @@
-import { TestComponent } from './user/test/test.component';
+import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
+import { LoginComponent } from './login/login.component';
+import { UserAreaComponent } from './user/user-area/user-area.component';
+import { TestComponent } from './user/test/test.component';
 import { UserRegistrationComponent } from './user/user-registration/user-registration.component';
 import { StudentDetailsComponent } from './admin/student-details/student-details.component';
 import { CompanyDetailsComponent } from './admin/company-details/company-details.component';
 import { AdminAreaComponent } from './admin/admin-area/admin-area.component';
-import { LoginComponent } from './admin/login/login.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [{path: 'home', component: HomeComponent},
-{path:'adminLogin', component:LoginComponent},
+const routes: Routes = [{path: '',redirectTo:'/home', pathMatch:'full'},
+{path: 'home', component: HomeComponent},
+{path: 'home/:id', component: HomeComponent},
 {path:'admin-area', component:AdminAreaComponent},
 {path:'company-details', component:CompanyDetailsComponent},
 {path:'student-details', component:StudentDetailsComponent},
 {path:'registration', component:UserRegistrationComponent},
+{path:'test', component:TestComponent},
+{path:'user-area', component:UserAreaComponent},
+{path:'login', component:LoginComponent},
 {path:'user-login', component:UserLoginComponent},
-{path:'test', component:TestComponent}];
+{path:'admin-login', component:AdminLoginComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
