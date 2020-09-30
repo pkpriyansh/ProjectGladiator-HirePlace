@@ -188,10 +188,11 @@ export class TestComponent implements OnInit {
       if(this.seconds==1800){
         this.submitTest();
       }
-    },1000)
+      },1000)
+    
   }
 
   displayTimeElapsed():string{
-    return Math.floor(this.seconds/3600)+ ':' + Math.floor(this.seconds/60)+ ':' +Math.floor(this.seconds%60);
+    return Math.floor(this.seconds/3600)+ ':' + (29-Math.floor(this.seconds/60))+ ':' + (60-Math.floor(this.seconds%60));
   }
 }

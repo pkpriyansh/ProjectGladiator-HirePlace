@@ -14,7 +14,7 @@
 
         <div class="container-nav">
           <div *ngFor="let q of questions;index as i" (click)="indexSelect(i)">
-            <button class="button">{{i+1}}</button>
+            <button [ngClass]="{green:(i==qProgress)?true:false, button:true}">{{i+1}}</button>
           </div>
         </div>
 

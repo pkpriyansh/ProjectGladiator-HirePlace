@@ -1,3 +1,4 @@
+import { UserResultComponent } from './user/user-result/user-result.component';
 import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { LoginComponent } from './login/login.component';
@@ -22,7 +23,8 @@ const routes: Routes = [{path: '',redirectTo:'/home', pathMatch:'full'},
 {path:'user-area', component:UserAreaComponent},
 {path:'login', component:LoginComponent},
 {path:'user-login', component:UserLoginComponent},
-{path:'admin-login', component:AdminLoginComponent}];
+{path:'admin-login', component:AdminLoginComponent},
+{path:'user-result', component:UserResultComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
