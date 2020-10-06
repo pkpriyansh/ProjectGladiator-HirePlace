@@ -50,6 +50,7 @@ export class StudentDetailsComponent implements OnInit {
 
   logout(){
     sessionStorage.clear();
+    localStorage.clear();
     this.router.navigate(['home'])
   }
 }

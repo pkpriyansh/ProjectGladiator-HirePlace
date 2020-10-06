@@ -63,6 +63,7 @@ export class CompanyDetailsComponent implements OnInit {
 
   logout(){
     sessionStorage.clear();
+    localStorage.clear();
     this.router.navigate(['home'])
   }
   

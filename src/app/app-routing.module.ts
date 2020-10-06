@@ -1,3 +1,5 @@
+import { ResetAreaComponent } from './user/reset-area/reset-area.component';
+import { PasswordComponent } from './user/password/password.component';
 import { TestDetailsComponent } from './admin/test-details/test-details.component';
 import { UserResultComponent } from './user/user-result/user-result.component';
 import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
@@ -28,7 +30,9 @@ const routes: Routes = [{path: '',redirectTo:'/home', pathMatch:'full'},
 {path:'user-login', component:UserLoginComponent},
 {path:'admin-login', component:AdminLoginComponent},
 {path:'user-result', component:UserResultComponent},
-{path:'test-details', component:TestDetailsComponent}];
+{path:'test-details', component:TestDetailsComponent},
+{path: 'reset', component:ResetAreaComponent},
+{path: 'HirePlace/users/reset/password', component:PasswordComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

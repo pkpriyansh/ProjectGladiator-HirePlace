@@ -54,6 +54,8 @@
   .container .jumbotron{
       margin-left: 150px;
       margin-top: 60px;
+      margin-right: 10px;
+      padding-right: 10px;
   }
 
    .logo a img{

@@ -1,3 +1,4 @@
+import { Password } from './../model/password';
 import { CandidateRegistrationDto } from './../model/CandidateRegistrationDto';
 import { Login } from './../model/login';
 import { TestRegistrationDto } from './../model/TestRegistrationDto';
@@ -50,6 +51,14 @@ export class UserService {
 
   loginVerification(login:Login):Observable<HttpResponse<Config>> {
     return this.http.post<Config>("http://localhost:9091/HirePlace/users/user-login",login, { observe: 'response' });
+  }
+
+  emailVerification(email:string):Observable<string>{
+    return this.http.get<string>("http://localhost:9091/HirePlace/users/reset/"  + email); 
+  }
+
+  resetPassword(password:Password):Observable<HttpResponse<Config>>{
+    return this.http.put<Config>("http://localhost:9091/HirePlace/users/reset/password", password, { observe: 'response' });
   }
 
   addUserDetails(user: CandidateRegistrationDto):Observable<Object>{

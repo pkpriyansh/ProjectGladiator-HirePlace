@@ -28,6 +28,7 @@ export class UserAreaComponent implements OnInit {
 
   logout(){
     sessionStorage.clear();
+    localStorage.clear();
     this.router.navigate(['home'])
   }
 

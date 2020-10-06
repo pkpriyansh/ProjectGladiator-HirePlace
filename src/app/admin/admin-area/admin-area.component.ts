@@ -18,6 +18,7 @@ export class AdminAreaComponent implements OnInit {
 
   logout(){
     sessionStorage.clear();
+    localStorage.clear();
     this.router.navigate(['home'])
   }
 
