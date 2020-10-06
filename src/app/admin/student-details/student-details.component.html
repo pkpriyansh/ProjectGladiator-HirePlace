@@ -1,2 +1,131 @@
-<p>student-details works!</p>
-<button routerLink="/admin-area">Back button</button>
+<div class="container">
+    <div class="row">
+        <div class="col-10">
+        
+            <div >
+                <h2>SEARCH STUDENTS :</h2>
+            <pre>
+
+            </pre>
+            <form [formGroup]="detailsForm" (ngSubmit)="detailsForm.valid && onSubmit()">
+                
+
+                        <div class="form-group">
+        
+                            <label for="testId">Test Id:</label>
+                            
+                            <input type="number" name="testId" id="testId" class="form-control input-validation-error" formControlName="testId" [ngClass]="{'is-invalid':
+                            detailsForm.get('testId').touched && detailsForm.get('testId').invalid}">
+                                
+                                
+        <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="detailsForm.controls.testId.invalid && 
+        (detailsForm.controls.testId.touched || detailsForm.controls.testId.dirty)">       
+         <h6>*Test Id is required</h6>      
+</div>
+</div>
+<div >
+        
+    <label for="state">State:</label>
+    
+    <select name="state" id="state" class="form-control" formControlName="state">
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+        <option value="Daman and Diu">Daman and Diu</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Lakshadweep">Lakshadweep</option>
+        <option value="Puducherry">Puducherry</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="West Bengal">West Bengal</option>
+        </select>
+</div>
+
+<div class="form-group">
+                   
+    <label for="city">City:</label>
+    <input class="form-control" type="text" name="city" id="city" formControlName="city">
+</div>
+
+    <div class="form-group">
+        
+        <label for="level">Level:</label>
+        
+        <select name="detailsForm" id="level" class="form-control" formControlName="level">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+           
+    </div>
+
+<div class="form-group">
+                   
+    <label for="marks">Marks Above:</label>
+    <input class="form-control" type="number" name="marks" id="marks" formControlName="marks">
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-primary" [disabled]="detailsForm.invalid">Search Students</button>   
+        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+
+<br/><br/>
+<div class="col-lg-12">
+  <h2> Candidate Details</h2>
+  <table class="table table-striped table-responsive table-hover">
+    <thead>
+    <tr>
+        <th>Email</th>
+        <th>TestId</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Level 1 score</th>
+        <th>Level 2 Score</th>
+        <th>Level 3 Score</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{ student.mapEmail.email }}</td>
+            <td>{{ student.mapTest.testId }}</td>
+            <td>{{ student.mapEmail.firstName }}</td>
+            <td>{{ student.mapEmail.lastName }}</td>
+            <td>{{ student.level1Score }}</td>
+            <td>{{ student.level2Score }}</td>
+            <td>{{ student.level3Score }}</td>
+        </tr>
+    </tbody>
+    </table>
+    </div>

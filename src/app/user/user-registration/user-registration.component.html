@@ -1,23 +1,45 @@
+
+<body>
+    <div><div class="topnav">
+        <i class="fas fa-home fa-3x cust"></i>
+        <a class="top" href="#home" routerLink='/home'>Home</a>
+        <a class="top" href="#about" routerLink='/about'>About Us</a>
+        <div class="logo"><a href="#"><img src="/assets/images/logo2.jpeg"></a></div>   
+    </div>
 <div class="container">
     <div class="row">
         <div class="col-10">
         
             <div class="jumbotron">
                 <h2>REGISTRATION FORM:</h2>
-            <pre>
-
-            </pre>
+            
             <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && onSubmit()">
-                <div class="form-group">
-                    
-                <label for="fullName">Full Name:</label>
-                <input class="form-control input-validation-error" type="text" name="fullName" id="fullName" formControlName="fullName" [ngClass]="{'is-invalid':
-                registerForm.get('fullName').touched && registerForm.get('fullName').invalid}">
-                <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.fullName.invalid && 
-                    (registerForm.controls.fullName.touched || registerForm.controls.fullName.dirty)">
-                    <h6>*Full name is required</h6>
+                <div class="row">   
+                    <div class="col-md-6">
+                    <div class="form-group">
+                        
+                    <label for="firstName">First Name:</label>
+                    <input class="form-control form-control-lg" type="text" name="firstName" id="firstName" formControlName="firstName" [ngClass]="{'is-invalid':
+                    registerForm.get('firstName').touched && registerForm.get('firstName').invalid}">
+                    <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.firstName.invalid && 
+                        (registerForm.controls.firstName.touched || registerForm.controls.firstName.dirty)">
+                        <h6>*First name is required</h6>
+                        </div>
                     </div>
-                </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="form-group">
+                        
+                        <label for="lastName">Last Name:</label>
+                        <input class="form-control form-control-lg" type="text" name="lastName" id="lastName" formControlName="lastName" [ngClass]="{'is-invalid':
+                        registerForm.get('lastName').touched && registerForm.get('lastName').invalid}">
+                        <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.lastName.invalid && 
+                            (registerForm.controls.lastName.touched || registerForm.controls.lastName.dirty)">
+                            <h6>*Last name is required</h6>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 <div class="form-group">
                     
                  <label for="email">Email-Id:</label>
@@ -30,11 +52,11 @@
                 </div>
                 <div class="form-group">
                     
-                <label for="mobile">Mobile Number:</label>
-                <input class="form-control input-validation-error" type="number" name="mobile" id="mobile" formControlName="mobile" [ngClass]="{'is-invalid':
-                registerForm.get('mobile').touched && registerForm.get('mobile').invalid}">
-                <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.mobile.invalid && 
-                    (registerForm.controls.mobile.touched || registerForm.controls.mobile.dirty)">       
+                <label for="mobileNumber">Mobile Number:</label>
+                <input class="form-control input-validation-error" type="text" name="mobileNumber" id="mobileNumber" formControlName="mobileNumber" [ngClass]="{'is-invalid':
+                registerForm.get('mobileNumber').touched && registerForm.get('mobileNumber').invalid}">
+                <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.mobileNumber.invalid && 
+                    (registerForm.controls.mobileNumber.touched || registerForm.controls.mobileNumber.dirty)">       
                      <h6>*Valid Mobile Number is required</h6>      
                     </div>
                 </div>
@@ -50,7 +72,7 @@
                 </div>
                 <div class="form-group">
                     
-                <label for="dateOfBirth">Date of Birth:</label>
+                <label for="dateOfBirth">Date of Birth:  {{this.registerForm.controls.dateOfBirth.value}}</label>
                 <input class="form-control input-validation-error" type="date" name="dateOfBirth" id="dateOfBirth" formControlName="dateOfBirth" [ngClass]="{'is-invalid':
                 registerForm.get('dateOfBirth').touched && registerForm.get('dateOfBirth').invalid}">
                 <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.dateOfBirth.invalid && 
@@ -61,8 +83,47 @@
     <div class="form-group">
         
         <label for="state">State:</label>
-        <input class="form-control input-validation-error" type="text" name="state" id="state" formControlName="state" [ngClass]="{'is-invalid':
+        
+        <select name="state" id="state" class="form-control input-validation-error" formControlName="state" [ngClass]="{'is-invalid':
         registerForm.get('state').touched && registerForm.get('state').invalid}">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Puducherry">Puducherry</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            </select>
+
         <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.state.invalid && 
                     (registerForm.controls.state.touched || registerForm.controls.state.dirty)">       
                      <h6>*State is required</h6>      
@@ -71,8 +132,21 @@
     <div class="form-group">
         
         <label for="qualification">Qualification:</label>
-        <input class="form-control input-validation-error" type="text" name="qualification" id="qualification" formControlName="qualification" [ngClass]="{'is-invalid':
+        <select name="qualification" id="qualification" class="form-control input-validation-error" formControlName="qualification" [ngClass]="{'is-invalid':
         registerForm.get('qualification').touched && registerForm.get('qualification').invalid}">
+            <option value="B.Tech Computer Science Engineering">B.Tech Computer Science Engineering</option>
+            <option value="B.Tech Information Technology">B.Tech Information Technology</option>
+            <option value="B.Tech Electronics And Communications Engineering">B.Tech Electronics And Communications Engineering</option>
+            <option value="B.Tech Electrical And Electronics Engineering">B.Tech Electrical And Electronics Engineering</option>
+            <option value="B.Tech Mechanical Engineering">B.Tech Mechanical Engineering</option>
+            <option value="B.Tech Others">B.Tech Others</option>
+            <option value="M.Tech Computer Science Engineering">M.Tech Computer Science Engineering</option>
+            <option value="M.Tech Information Technology">M.Tech Information Technology</option>
+            <option value="M.Tech Electronics And Communications Engineering">M.Tech Electronics And Communications Engineering</option>
+            <option value="M.Tech Electrical And Electronics Engineering">M.Tech Electrical And Electronics Engineering</option>
+            <option value="M.Tech Mechanical Engineering">M.Tech Mechanical Engineering</option>
+            <option value="M.Tech Others">M.Tech Others</option>
+            </select>
         <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.qualification.invalid && 
                     (registerForm.controls.qualification.touched || registerForm.controls.qualification.dirty)">       
                      <h6>*Qualification is required</h6>      
@@ -102,7 +176,7 @@
     <div class="form-group">
         
         <label for="confirmPassword">Confirm Password:</label>
-        <input class="form-control input-validation-error" name="confirmPassword" id="confirmPassword" type="text" formControlName="confirmPassword" [ngClass]="{'is-invalid':
+        <input class="form-control input-validation-error" name="confirmPassword" id="confirmPassword" type="password" formControlName="confirmPassword" [ngClass]="{'is-invalid':
         registerForm.get('confirmPassword').touched && registerForm.get('confirmPassword').invalid}">
         <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.confirmPassword.invalid && 
         (registerForm.controls.confirmPassword.touched || registerForm.controls.confirmPassword.dirty)">       
@@ -110,16 +184,7 @@
         </div>
         
     </div>
-    <div class="form-group">
-       
-            <label for="captcha">Captcha:</label>
-            <input class="form-control input-validation-error" id="captcha" name="captcha" type="text" formControlName="captcha" [ngClass]="{'is-invalid':
-            registerForm.get('captcha').touched && registerForm.get('captcha').invalid}"> 
-            <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.captcha.invalid && 
-            (registerForm.controls.captcha.touched || registerForm.controls.captcha.dirty)">       
-             <h6>*Captcha is required</h6>      
-    </div>
-       </div>
+    
         
 
     <div class="text-center">

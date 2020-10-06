@@ -5,15 +5,18 @@ import { AdminAreaComponent } from './admin-area/admin-area.component';
 import { CompanyDetailsComponent } from './company-details/company-details.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { TestDetailsComponent } from './test-details/test-details.component';
 
 
 
 @NgModule({
-  declarations: [ AdminAreaComponent, CompanyDetailsComponent, StudentDetailsComponent, AdminLoginComponent],
+  declarations: [ AdminAreaComponent, CompanyDetailsComponent, StudentDetailsComponent, AdminLoginComponent, TestDetailsComponent],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
-  exports:[AdminAreaComponent,StudentDetailsComponent,CompanyDetailsComponent,AdminLoginComponent]
+  exports:[AdminAreaComponent,StudentDetailsComponent,CompanyDetailsComponent,AdminLoginComponent,TestDetailsComponent]
 })
 export class AdminModule { }

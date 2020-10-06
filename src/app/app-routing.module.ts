@@ -1,3 +1,4 @@
+import { TestDetailsComponent } from './admin/test-details/test-details.component';
 import { UserResultComponent } from './user/user-result/user-result.component';
 import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
@@ -11,8 +12,10 @@ import { AdminAreaComponent } from './admin/admin-area/admin-area.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [{path: '',redirectTo:'/home', pathMatch:'full'},
+{path:'about', component: AboutComponent},
 {path: 'home', component: HomeComponent},
 {path: 'home/:id', component: HomeComponent},
 {path:'admin-area', component:AdminAreaComponent},
@@ -24,7 +27,8 @@ const routes: Routes = [{path: '',redirectTo:'/home', pathMatch:'full'},
 {path:'login', component:LoginComponent},
 {path:'user-login', component:UserLoginComponent},
 {path:'admin-login', component:AdminLoginComponent},
-{path:'user-result', component:UserResultComponent}];
+{path:'user-result', component:UserResultComponent},
+{path:'test-details', component:TestDetailsComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

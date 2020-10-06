@@ -1,6 +1,30 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  background-color:transparent;
+  height: max-content;
+  overflow: hidden;
+  top: auto;
+  left: auto;
+  
+}
+.topnav .top {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 65px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
 .topnav {
   background-color: #133b5c;
   overflow: hidden;
+  height: 80px;
 }
 
 
@@ -8,26 +32,51 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 65px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
 }
 
-
-.topnav a:hover {
+.topnav a.top:hover {
   background-color: #ddd;
   color: black;
 }
 
-.topnav a.active {
-  float: right;
+.topnav a.active:hover {
+  background-color: #ddd;
+  color: black;
 }
 
+
+.topnav a.active {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 65px;
+  text-decoration: none;
+  font-size: 25px;
+}
+    
+.container .jumbotron{
+    margin-left: 150px;
+    margin-top: 60px;
+}
+
+.logo a img{
+  margin-left: 160px;
+  padding-top: px;
+  bottom: 50px;
+  height: 70px;
+  width: 200px;
+  margin-bottom: 5px;
+
+}
 .button1{
-  width: 100%;
+  width: 60%;
   padding: 1rem;
-  border-radius: 20px;
-  margin-bottom: 1.2rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  margin-top: 0.1rem;
   border: none;
   font-size: 1.5rem;
   background-color: #133b5c;
@@ -36,29 +85,59 @@
 }
 
 .button2{
-  width: 100%;
+  width: 60%;
+  height: 30%;
   padding: 1rem;
-  border-radius: 20px;
-  margin-bottom: 0.5rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
   border: none;
   font-size: 1.5rem;
   background-color: #133b5c;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
 }
-
+  
 button:hover{
   transform: scale(1.1);
 }
 
 .container{
-border: none;
-box-shadow: 3px 3px 5px 6px #ccc; 
-width: 30%;
-margin:auto;
-margin-top: 10rem;
+  border: none;
+  box-shadow: 3px 3px 5px 6px #ccc; 
+  width: 36%;
+  margin:auto;
+  margin-top: 10rem;
+  backdrop-filter: blur(5px);
 }
 
 .container1{
-padding: 3rem 4rem;
+  padding: 4rem 4rem;
+  height: 300px;
+  background-color: transparent;
+  margin-left: 85px;
+}
+
+.h{
+  height: 720px;
+}
+
+.cust {
+  position: absolute;
+  margin-right: 20px;
+  margin-top: 1px;
+  width: 20px;
+  height: 20px;
+  padding-top: 9px;
+  padding-left: 15px;
+  color: white;
+ 
+ 
+ }
+ .cust:hover{
+   color: black;
+   background-color: black;
+ }
+
+ .hide{
+  display: none;
 }
