@@ -1,11 +1,10 @@
-<body>
+
     <div>
         <div class="topnav">
             <i class="fas fa-home fa-3x cust"></i>
             <a class="top" href="#home" routerLink="/home">Home</a>
             <a class="top" href="#about" routerLink="/about">About Us</a>
             <div class="logo"><a href="#"><img src="/assets/images/logo2.jpeg"></a></div>
-            <a class="active" href="#register" routerLink='/registration'>Register</a>
             
             
         </div>
@@ -22,21 +21,23 @@
 
                 <form [formGroup] = "userLoginForm" (submit) ="onLogin()" >
                     <div>          
-                    <p class = "validate" *ngIf = "userLoginForm.controls.username.errors && (userLoginForm.controls.username.touched || userLoginForm.controls.username.dirty)">*Username required</p> 
+                    
                     <i class="fas fa-user fa-2x cust"></i> 
                     <input type="text" placeholder=" Username" formControlName = "username" > <br>
+                    <p class = "validate" style="color: rgba(255, 0, 55, 0.966);"  *ngIf = "userLoginForm.controls.username.errors && (userLoginForm.controls.username.touched || userLoginForm.controls.username.dirty)">*Username required</p> 
                 </div>
                 <div>
-                    <p class = "validate" *ngIf = "userLoginForm.controls.password.errors && (userLoginForm.controls.password.touched || userLoginForm.controls.password.dirty)">*Password required</p> 
+                    
                     <i class="fas fa-lock fa-2x cust"></i> 
                     <input type="password" placeholder="password" formControlName = "password"> 
+                    <p class = "validate" style="color: rgba(255, 0, 55, 0.966);" *ngIf = "userLoginForm.controls.password.errors && (userLoginForm.controls.password.touched || userLoginForm.controls.password.dirty)">*Password required</p> 
                 </div>
                 <div>
                     <p class="forgot"><a href="reset">Forgot Password?</a></p> 
                     <button class="btn" type="submit" [disabled] ="userLoginForm.invalid">Login</button>
                 </div>
                 <div>
-                    <p>Not a registered user? <a href="register">Sign up</a></p>
+                    <p>Not a registered user? <a routerLink='/registration'>Sign up</a></p>
                 </div>
                 </form>
             </div>
@@ -44,4 +45,4 @@
     </div>
     </div>
    </div>
-</body>
+

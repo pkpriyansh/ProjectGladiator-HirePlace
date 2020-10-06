@@ -33,6 +33,7 @@ export class PasswordComponent implements OnInit {
   }
 
   onSubmit(){
+    alert("submitted called")
     if(this.passwordForm.controls.newPassword.value == this.passwordForm.controls.confirmPassword.value){
       let email = localStorage.getItem('Username');
       let password = this.passwordForm.controls.newPassword.value;
