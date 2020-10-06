@@ -72,7 +72,7 @@
                 </div>
                 <div class="form-group">
                     
-                <label for="dateOfBirth">Date of Birth:</label>
+                <label for="dateOfBirth">Date of Birth:  {{this.registerForm.controls.dateOfBirth.value}}</label>
                 <input class="form-control input-validation-error" type="date" name="dateOfBirth" id="dateOfBirth" formControlName="dateOfBirth" [ngClass]="{'is-invalid':
                 registerForm.get('dateOfBirth').touched && registerForm.get('dateOfBirth').invalid}">
                 <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="registerForm.controls.dateOfBirth.invalid && 
