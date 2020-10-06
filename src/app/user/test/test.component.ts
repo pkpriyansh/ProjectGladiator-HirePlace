@@ -1,6 +1,8 @@
-import { ConvertedQuestions } from './../ConvertedQuestions';
+import { TestRegistrationDto } from './../../model/TestRegistrationDto';
+import { CandidateRegistration } from './../../model/CandidateRegistration';
+import { Test } from './../../model/Test';
+import {  QuestionBank } from './../../model/questions';
 import { Router } from '@angular/router';
-import { Questions } from './../questions';
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 
@@ -10,11 +12,18 @@ import { UserService } from '../user.service';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-  questions:Questions[];//level 1 questions
-  selectedOptions;;
+
+  
+  questions:QuestionBank[];
+  testRegistration:TestRegistrationDto;
+  candidate:CandidateRegistration;
+  test:Test;
+  selectedOptions;
   recordedOptions=[];
   score:number;
-  //Cquestions:ConvertedQuestions[];
+ // level1Score:number;
+  //level2Score:number;
+  //level3Score:number;
 
 
   hideSubmit:boolean;
@@ -42,6 +51,13 @@ export class TestComponent implements OnInit {
   constructor(private testService:UserService, private router: Router) { }
 
   ngOnInit(): void {
+
+    if(sessionStorage.getItem("Username")== null){
+      this.router.navigate(['user-login'])
+    }
+
+    this.testRegistration = new TestRegistrationDto();
+
     this.isGivingTestFirstTime=true
     this.isLevel4=false;
     this.testLevel=1;
@@ -57,6 +73,19 @@ export class TestComponent implements OnInit {
     this.timer=0;
     this.qProgress=0;
    // this.startTimer();
+   this.testService.getTestById().subscribe(
+    data=>{
+      this.test=data;
+      //console.log(JSON.stringify(this.test))
+    });
+    this.testRegistration.email =sessionStorage.getItem("Username");
+    this.testRegistration.testId = parseInt(sessionStorage.getItem("testid"));
+    
+    this.testService.RegisterTest(this.testRegistration).subscribe(
+      data =>{
+        console.log("done Registration");
+      }
+    );
     this.testService.getAllLevel1Questions().subscribe(
       data=>{
         //console.log(data);
@@ -98,20 +127,88 @@ export class TestComponent implements OnInit {
     }
    
   }
+
+  logout(){
+    this.testService.updateTestRegistration(this.testRegistration).subscribe(
+      data=>{
+        console.log("level1")
+      }
+    );
+    sessionStorage.clear();
+    this.router.navigate['home'];
+  }
+  
   submitTest(){
     for(let i=0 ;i <this.questions.length; i++){
-      if(this.recordedOptions[i]==this.questions[i].correctoption){
+      if(this.recordedOptions[i]==this.questions[i].correctOption){
         this.score++;
       }
     }
-    if(this.score>=12)
+    /* if(this.testLevel==4){
+      this.isLevel4=true
+    }*/
+   
+    if(this.testLevel==1)
     {
+      this.score=this.score*5;
+      this.testRegistration.level1Score=this.score;
+      this.testService.updateTestRegistration(this.testRegistration).subscribe(
+        data=>{
+          console.log("level1")
+        }
+      );
+      console.log("inside level 1")
+      if(this.testRegistration.level1Score>=this.test.level1Pass)
+      {
+        
+        console.log("passing condition")
+        this.isPassed=true;
+      }
+    }
+    if(this.testLevel==2)
+    {
+      this.score=this.score*5;
+      this.testRegistration.level2Score=this.score;
+      this.testService.updateTestRegistration(this.testRegistration).subscribe(
+        data=>{
+          console.log("level2")
+        }
+      )
+      if(this.testRegistration.level2Score>this.test.level2Pass)
+      {
+        this.isPassed=true;
+      }
+    }
+    if(this.testLevel==3)
+    {
+      this.score=this.score*5;
+      this.testRegistration.level3Score=this.score;
+     this.testService.updateTestRegistration(this.testRegistration).subscribe(
+        data=>{
+          console.log("level3")
+        }
+      );
+      if(this.testRegistration.level3Score>=this.test.level3Pass)
+      {
+        this.isPassed=true;
+      }
+    }
+    /*if(this.score>=5 && this.testLevel==2)
+    {
+      this.level2Score=this.score;
+      this.isPassed=true;
+      this.testLevel++;
+    }
+    if(this.score>=2 && this.testLevel==3)
+    {
+      this.level3Score=this.score;
       this.isPassed=true;
       this.testLevel++;
       if(this.testLevel==4){
         this.isLevel4=true
       }
-    }
+    }*/
+    this.testLevel++;
     this.hideTest=true;
     this.isSubmit=false;
     this.hideBack=false;
@@ -124,6 +221,9 @@ export class TestComponent implements OnInit {
     this.timer=0;
     this.qProgress=0;
     this.recordedOptions.fill(0,0,this.questions.length-1);
+    if(this.testLevel==4){
+      this.isLevel4=true
+    }
   }
 
 
@@ -180,7 +280,7 @@ export class TestComponent implements OnInit {
   }
 
   startTimer(){
-    this.timer= setInterval(()=>{
+    this.timer= window.setInterval(()=>{
       this.seconds++;
       if(this.seconds==20 && this.isGivingTestFirstTime){
         this.startTest();
@@ -188,7 +288,7 @@ export class TestComponent implements OnInit {
       if(this.seconds==1800){
         this.submitTest();
       }
-      },1000)
+      },2000)
     
   }
 

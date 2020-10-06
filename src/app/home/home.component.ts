@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
 
     this.testId = parseInt(id);
     
-    localStorage.setItem("testid",id);
+    sessionStorage.setItem("testid",id);
     
 
   }

@@ -1,0 +1,103 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+.topnav .top {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 65px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav {
+  background-color: #133b5c;
+  overflow: hidden;
+  height: 80px;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 65px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a.top:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 65px;
+  text-decoration: none;
+  font-size: 25px;
+}
+    
+.container .jumbotron{
+    margin-left: 150px;
+    margin-top: 60px;
+}
+
+.logo a img{
+  margin-left: 160px;
+  padding-top: px;
+  bottom: 50px;
+  height: 70px;
+  width: 200px;
+  margin-bottom: 5px;
+
+}
+  .cust {
+    position: absolute;
+    margin-right: 20px;
+    margin-top: 1px;
+    width: 20px;
+    height: 20px;
+    padding-top: 9px;
+    padding-left: 15px;
+    color: white;
+   
+   
+   }
+   .cust:hover{
+     color: black;
+     background-color: black;
+   }
+  table{
+   
+   
+       border-collapse: collapse;
+       border-radius: 25px;
+        margin-left: 380px;
+        margin-right: 300px;
+        padding-right: 50px;
+        padding-left: 50px;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    h2{
+        padding-top: 80px;
+        padding-left: 670px;
+    }
+    .col{
+      margin-left: 400px;
+      margin-right: 400px;
+      margin-top: 100px;
+      padding-right: 20px;
+    }
+
+   
+
+    

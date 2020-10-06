@@ -1,3 +1,121 @@
-<p>company-details works!</p>
+<body>
+    <div><div class="topnav">
+        <i class="fas fa-home fa-3x cust"></i>
+        <a class="top" href="#home" routerLink='/home'>Home</a>
+        <a class="top" href="#about" routerLink='/about'>About</a>
+        <div class="logo"><a href="#"><img src="/assets/images/logo2.jpeg"></a></div>   
+        <a class="active" (click)="logout()" routerLink='/home'>Logout</a>
+    </div>
 
-<button routerLink="/admin-area">Back button</button>
+    <div class="container">
+        <div class="jumbotron">
+            <div >
+                <h2 style="margin-left: 40%">Add Test</h2>
+            </div>
+
+        <form [formGroup]="companyForm" (ngSubmit)="companyForm.valid && onSubmit()">
+    
+
+        <div class="form-group">
+        <label for="testName">Test Name: </label>
+        <input type="text" name="testName" id="testName" class="form-control input-validation-error"
+        formControlName="testName" required  [ngClass]="{'is-invalid':
+        companyForm.get('testName').touched && companyForm.get('testName').invalid}">
+  
+        <div style="color: red;" *ngIf="companyForm.controls.testName.invalid && (companyForm.controls.testName.dirty || companyForm.controls.testName.touched)"
+        >*Test-Name is required.
+        </div>
+        </div>
+        
+
+        <div class="form-group">
+            <label for="companyName">Company Name: </label>
+            <input type="text" name="companyName" id="companyName" class="form-control input-validation-error"
+            formControlName="companyName" required  [ngClass]="{'is-invalid':
+            companyForm.get('companyName').touched && companyForm.get('companyName').invalid}">
+      
+            <div style="color: red;" *ngIf="companyForm.controls.companyName.invalid && (companyForm.controls.companyName.dirty || companyForm.controls.companyName.touched)"
+             >*Company-Name is required.
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label for="level1Pass">Level1 Passing Criteria: </label>
+            <input type="number" name="level1Pass" id="level1Pass" class="form-control input-validation-error"
+            formControlName="level1Pass" required [ngClass]="{'is-invalid':
+            companyForm.get('level1Pass').touched && companyForm.get('level1Pass').invalid}">
+      
+            <div style="color: red;" *ngIf="companyForm.controls.level1Pass.invalid && (companyForm.controls.level1Pass.dirty || companyForm.controls.level1Pass.touched)"
+            >*Level1 Passing criteria is required.
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label for="level2Pass">Level2 Passing Criteria: </label>
+            <input type="number" name="level2Pass" id="level2Pass" class="form-control input-validation-error"
+            formControlName="level2Pass" required [ngClass]="{'is-invalid':
+            companyForm.get('level2Pass').touched && companyForm.get('level2Pass').invalid}">
+      
+            <div style="color: red;" *ngIf="companyForm.controls.level2Pass.invalid && (companyForm.controls.level2Pass.dirty || companyForm.controls.level2Pass.touched)"
+             >*Level2 Passing criteria  is required.
+      
+            
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label for="level3Pass">Level3 Passing Criteria: </label>
+            <input type="number" name="level3Pass" id="level3Pass" class="form-control input-validation-error"
+            formControlName="level3Pass" required [ngClass]="{'is-invalid':
+            companyForm.get('level3Pass').touched && companyForm.get('level3Pass').invalid}">
+      
+            <div style="color: red;" *ngIf="companyForm.controls.level3Pass.invalid && (companyForm.controls.level3Pass.dirty || companyForm.controls.level3Pass.touched)"
+             >*Level3 Passing criteria  is required.
+      
+            
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label for="fileUrl">File: </label>
+            <input type="file" name="fileUrl" (change) = "onFileSelection($event)" id="fileUrl" class="form-control input-validation-error"
+            formControlName="fileUrl" required [ngClass]="{'is-invalid':
+            companyForm.get('fileUrl').touched && companyForm.get('fileUrl').invalid}">
+      
+            <div style="color: red;" *ngIf="companyForm.controls.fileUrl.invalid && (companyForm.controls.fileUrl.dirty || companyForm.controls.fileUrl.touched)"
+            >*File is required.
+      
+            
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label for="examDate">Exam Date: </label>
+            <input type="date" name="examDate" id="examDate" class="form-control input-validation-error"
+            formControlName="examDate" required [ngClass]="{'is-invalid':
+            companyForm.get('examDate').touched && companyForm.get('examDate').invalid}">{{companyForm.get('examDate').value}}
+      
+            <div style="color: red;" *ngIf="companyForm.controls.examDate.invalid && (companyForm.controls.examDate.dirty || companyForm.controls.examDate.touched)"
+             >*Exam Date is required.</div>
+            </div>
+            
+
+            
+
+            <div class="text-center">
+                <button class="btn btn-primary" [disabled]="companyForm.invalid">Register Company</button>   
+                </div> 
+            
+            
+        </form>
+        </div>
+        </div>
+        </div>
+    </body>
+        
+            
+
+            
+
+            
+
