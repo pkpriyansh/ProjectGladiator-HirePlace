@@ -1,31 +1,43 @@
-<div>
-    <div class="container">
-        <div class="container1">
-           Admin Sign In
+<body>
+    <div>
+        <div class="topnav">
+            <i class="fas fa-home fa-3x cust"></i>
+            <a class="top" href="#home" routerLink="/home">Home</a>
+            <a class="top" href="#about" routerLink="/about">About Us</a>
+            <div class="logo"><a href="#"><img src="/assets/images/logo2.jpeg"></a></div>
+            <a class="active" href="#register" routerLink='/registration'>Register</a>
+            
+            
         </div>
 
-        <div class="container2">
-            <div>
-                <div>
-                    <input type="email" placeholder="Username">
+        <div class="h">
+            <div class="container">
+                <div class="container1">
+                    Admin Sign In
                 </div>
+                <div class="container2">
+                    <div>
 
-                <div>
-                    <input type="password" placeholder="Password">
-                </div>
+                    
 
+                <form [formGroup] = "adminLoginForm" (submit) ="onLogin()" >
+                    <div>          
+                    <p class = "validate" *ngIf = "adminLoginForm.controls.username.errors && (adminLoginForm.controls.username.touched || adminLoginForm.controls.username.dirty)">*Username required</p> 
+                    <i class="fas fa-user fa-2x cust"></i> 
+                    <input type="text" placeholder=" Username" formControlName = "username" > <br>
+                </div>
                 <div>
-                    <p><a href="#">Forgot Password</a></p>
+                    <p class = "validate" *ngIf = "adminLoginForm.controls.password.errors && (adminLoginForm.controls.password.touched || adminLoginForm.controls.password.dirty)">*Password required</p> 
+                    <i class="fas fa-lock fa-2x cust"></i> 
+                    <input type="password" placeholder="password" formControlName = "password"> 
                 </div>
-
                 <div>
-                    <button routerLink= '/admin-area'>Login</button>
+                    <button class="btn" type="submit" [disabled] ="adminLoginForm.invalid">Login</button>
                 </div>
-
-                <div class="container3">
-                    Not a registered user? <a>Register</a>
-                </div>
+                </form>
             </div>
         </div>
     </div>
-</div>
+    </div>
+   </div>
+</body>

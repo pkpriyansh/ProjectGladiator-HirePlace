@@ -1,4 +1,7 @@
-
+body{
+  background-color: rgb(253, 253, 191);
+  height: 100%;
+}
 
 .timer-container{
     text-align: center;
@@ -29,9 +32,9 @@
       background-color: rgb(236, 234, 234);
   }
   .button {
-    background-color:  #133b5c; 
+    color:  #133b5c; 
     border: none;
-    color: white;
+    background-color: white;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -56,9 +59,9 @@
 }
 .option{
     
-    padding: 5px;
-    background-color: #133b5c;
-    color: beige;
+    padding: 20px;
+    background-color: #215988;
+    color: black;
     width: 40%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -67,6 +70,7 @@
   }
   .option:hover{
       cursor: pointer;
+      background-color:#4a8abe;
   }
 
   .nav-buttons{
@@ -103,7 +107,7 @@
       position: absolute;
       left: 30%;
       top: 20%;
-      background-color: #133b5c;
+      background-color:#133b5c;
       height: 350px;
       width: 600px;
   }
@@ -117,13 +121,13 @@
   }
   .output>.nav-buttons>button{
     display: block;
-    background-color:  white; 
+    color:  white; 
     border: none;
-    color: black;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -138,15 +142,16 @@
       margin-top: 20px;
   }
   .output>.list{
-      color: white;
-      margin-left: 20px;
-      margin-top: 20px;
+      background-color: cornsilk;
+      color:red;
+      margin-left: 0px;
+      margin-top: 0px;
   }
   .output>.list>button{
     display: block;
-    background-color:  white; 
+    color:  white; 
     border: none;
-    color: black;
+    background-color: black;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 20px;

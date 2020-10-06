@@ -1,39 +1,47 @@
-<div>
-    <div class="topnav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a class="active" href="#login">Login</a>
-        <a class="active" href="#register">Register</a>
-        
-    </div>
-
-    <div class="container">
-        <div class="container1">
-            User Sign In
+<body>
+    <div>
+        <div class="topnav">
+            <i class="fas fa-home fa-3x cust"></i>
+            <a class="top" href="#home" routerLink="/home">Home</a>
+            <a class="top" href="#about" routerLink="/about">About Us</a>
+            <div class="logo"><a href="#"><img src="/assets/images/logo2.jpeg"></a></div>
+            <a class="active" href="#register" routerLink='/registration'>Register</a>
+            
+            
         </div>
 
-        <div class="container2">
-            <div>
-                <div>
-                    <input type="email" placeholder="Username">
+        <div class="h">
+            <div class="container">
+                <div class="container1">
+                    User Sign In
                 </div>
+                <div class="container2">
+                    <div>
 
-                <div>
-                    <input type="password" placeholder="Password">
-                </div>
+                    
 
+                <form [formGroup] = "userLoginForm" (submit) ="onLogin()" >
+                    <div>          
+                    <p class = "validate" *ngIf = "userLoginForm.controls.username.errors && (userLoginForm.controls.username.touched || userLoginForm.controls.username.dirty)">*Username required</p> 
+                    <i class="fas fa-user fa-2x cust"></i> 
+                    <input type="text" placeholder=" Username" formControlName = "username" > <br>
+                </div>
                 <div>
-                    <p><a href="#">Forgot Password</a></p>
+                    <p class = "validate" *ngIf = "userLoginForm.controls.password.errors && (userLoginForm.controls.password.touched || userLoginForm.controls.password.dirty)">*Password required</p> 
+                    <i class="fas fa-lock fa-2x cust"></i> 
+                    <input type="password" placeholder="password" formControlName = "password"> 
                 </div>
-
                 <div>
-                    <button routerLink='/user-area'>Login</button>
+                    <p class="forgot"><a href="reset">Forgot Password?</a></p> 
+                    <button class="btn" type="submit" [disabled] ="userLoginForm.invalid">Login</button>
                 </div>
-
-                <div class="container3">
-                    Not a registered user? <a>Register</a>
+                <div>
+                    <p>Not a registered user? <a href="register">Sign up</a></p>
                 </div>
+                </form>
             </div>
         </div>
     </div>
-</div>
+    </div>
+   </div>
+</body>

@@ -1,0 +1,141 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+  background-image: url(/assets/images/cropped.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  background-color:transparent;
+  
+}
+.logo a img{
+  margin-left: 160px;
+  padding-top: px;
+  bottom: 50px;
+  height: 70px;
+  width: 200px;
+
+}
+.topnav {
+    background-color: #133b5c;
+    overflow: hidden;
+    height: 80px;
+  }
+  
+ 
+  .topnav .top {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 22px 67px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+
+  .topnav .top:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .topnav .top.active {
+    float: right;
+  }
+
+button:hover{
+    transform: scale(1.1);
+}
+
+
+
+.footer-content{height: 80%;}
+.footer{
+  background: black;
+  color: #d3d3d3;
+  height: 550px;
+  
+}
+.footer .footer-content{
+  
+  height: 0px;
+  display: flex;
+}
+.footer .footer-content .footer-section{
+  flex: 1;
+  padding: 100px;
+  
+}
+.footer .footer-bottom{
+  background: #343a40;
+  color: #668866;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  
+  padding-top: 20px;
+}
+/*.footer .footer-header{
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}*/
+
+
+.contact i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.h{
+  height: 500px;
+}
+
+.text{
+  font-size: 15px;
+  color: black;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.container h1{
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+.container{
+  width: 50%;
+  float: left;
+  background-color: thistle;
+  padding: 50px;
+  padding-top: 100px;
+}
+.about-us .container{
+ 
+  background-size: 40%;
+  overflow: hidden;
+}
+.about-us{
+  padding: 90px;
+}
+.cust {
+  position: absolute;
+  margin-right: 20px;
+  margin-top: 1px;
+  width: 20px;
+  height: 20px;
+  padding-top: 9px;
+  padding-left: 15px;
+  color: white;
+ 
+ 
+ }
+ .cust:hover{
+   color: black;
+   background-color: black;
+ }
+ 

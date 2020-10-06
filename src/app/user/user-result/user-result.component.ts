@@ -1,3 +1,6 @@
+import { TestRegistration } from './../../model/TestRegistration';
+import { UserService } from './../user.service';
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserResultComponent implements OnInit {
 
-  constructor() { }
+  users:TestRegistration[];
+  email:string;
+  constructor(private userService:UserService) { }
 
   ngOnInit(): void {
+    this.email = sessionStorage.getItem("Username")
+    this.userService.getUserById(this.email).subscribe(data => {  
+      this.users = data;
+      });
+
   }
 
 }

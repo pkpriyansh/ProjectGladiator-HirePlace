@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+   height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 25px 2px rgba(0, 0, 0, 0.14);
+ 
+}
+#stark{
+    margin-top: 34px;
+    font-size: 2em;
+    font-weight: 600;
+    color:   #133b5c;
+   
+}
+.navbar span{
+    margin-left: 6px;
+}
+.navbar img{
+    display: block;
+    height:80px;
+    width: 80px;
+    margin-top: 6px;
+    
+}
