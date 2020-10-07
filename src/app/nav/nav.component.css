@@ -1,4 +1,4 @@
-.navbar{
+.navbar2{
     display: flex;
    height: 70px;
     justify-content: space-between;
@@ -13,10 +13,10 @@
     color:   #133b5c;
    
 }
-.navbar span{
+.navbar2 span{
     margin-left: 6px;
 }
-.navbar img{
+.navbar2 img{
     display: block;
     height:80px;
     width: 80px;

@@ -1,17 +1,17 @@
 
 <body>
     <div><div class="topnav">
-        <i class="fas fa-home fa-3x cust"></i>
-        <a class="top" href="#home" routerLink='/home'>Home</a>
-        <a class="top" href="#about" routerLink='/about'>About Us</a>
-        <div class="logo"><a href="#"><img src="/assets/images/logo2.jpeg"></a></div>   
+        <i class="fas fa-home fa-2x cust"></i>
+        <a class="top1" href="#home" routerLink='/home'>Home</a>
+        <a class="top2" href="#about" routerLink='/about'>About Us</a>
+        <div class="logo"><img src="/assets/images/logo.jpg"></div>   
     </div>
 <div class="container">
     <div class="row">
         <div class="col-10">
         
             <div class="jumbotron">
-                <h2>REGISTRATION FORM:</h2>
+                <h2 style="margin-left: 28%;">REGISTRATION FORM</h2><br>
             
             <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && onSubmit()">
                 <div class="row">   
@@ -189,6 +189,8 @@
 
     <div class="text-center">
         <button class="btn btn-primary" [disabled]="registerForm.invalid">Register</button>   
+        <br><br><br>
+        
         </div> 
     </form>
     </div>
