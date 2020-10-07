@@ -8,15 +8,26 @@ body{
   background-color:transparent;
 }
 
+.logo{
+  margin-left: 760px;
+}
+
 .logo img{
-  margin-left: 240px;
-  padding-top: 0px;
-  bottom: 50px;
-  height: 189px;
-  width: 200px;
-  padding-bottom: 78px;
+ height: 280px;
+ margin-top: 0px;
+ padding-left: 90px;
 
 }
+
+p{
+
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom:0px;
+  padding-left: 1030px;
+ 
+}
+
 .topnav {
     background-color:#211261;
     overflow: hidden;
@@ -104,11 +115,14 @@ button:hover{
   border: none;
   box-shadow: 6px 6px 10px 10px rgba(128, 128, 128, 0.493); 
   width: 36%;
-  margin:auto;
-  margin-top: 15rem;
+  size: 36%;
+  
+  padding-top: 0px;
+  margin-bottom: 100px;
+  margin-top: 0rem;
   backdrop-filter: blur(5px);
-  margin-left: 850px;
-  background-color:#61279e;
+  margin-left: 780px;
+  background-color: #61279e;
   border-radius: 25px;
 }
 

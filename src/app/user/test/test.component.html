@@ -20,8 +20,8 @@
 
   
         <div *ngIf="questions" class="questions">
-          <div>
-            {{qProgress+1}}. {{questions[qProgress].question}}
+          <div class="q">
+            &nbsp;{{qProgress+1}}. {{questions[qProgress].question}}
           </div>
         </div>
         <div class="options">
@@ -31,41 +31,52 @@
           <div (click)="answer(3)" [ngClass]="{green:selectedOptions[3],option:true}">D- {{questions[qProgress].optionD}}</div>
         </div>
         <div class="nav-buttons">
-          <button (click)="nav(false)"[ngClass]="{hide:hideBack, left:true}">back</button><button [ngClass]="{hide:hideNext, right:true}"(click)="nav(true)">next</button>
-          <button [ngClass]="{hide:hideSubmit,right:true}" (click)="submitTest()">submit</button>
+          <button (click)="nav(false)"[ngClass]="{hide:hideBack, left:true}">Back</button><button [ngClass]="{hide:hideNext, right:true}"(click)="nav(true)">Next</button>
+          <button [ngClass]="{hide:hideSubmit,right:true}" (click)="submitTest()">Submit</button>
         </div>
       
   </div>
-  
-  <div [ngClass]="{hide:!hideTest, output:true}">
-      <div class="score">
-        <h1>your Score is : {{score}}</h1>
+</div>
+  <div class="finalresult" [ngClass]="{hide:!hideTest}" >
+  <div class="finalcontent">
+   <div>
+     <h4 [ngClass]="{hide:(!isPassed)}"><h2>Congratulations!!!</h2></h4>
+    </div>
+      <div>
+        <h1>Your Score Is: {{score}}</h1>
       </div>
-      <div class="nav-buttons">
-        <button (click)="nextTest()" [ngClass]="{hide:(!isPassed||isLevel4)}">next Level</button>&nbsp;&nbsp;&nbsp;&nbsp;
-        <button routerLink='/home'>logout</button>
+      <div style="margin-top: 30px;">
+
+        
+        <button (click)="nextTest()" [ngClass]="{hide:(!isPassed||isLevel4)}">Next Level</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button routerLink='/home'>Logout</button>
       </div>
+    </div>
   </div>
 
 
-</div>
+
 
 
 <div [ngClass]="{hide:!isGivingTestFirstTime, output:true}">
       <h3>Test Details</h3>
       <div class="list">
         <ul>
+          <br>
           <li>There is no negative marking for any of the questions.</li>
+          <li>Each question carries 5 marks.</li>
           <li>You can navigate between your questions during your test.</li>
           <li>Do not indulge into any unfair means during the test.</li>
-          <li>At the top of the screen you can see the timer which indicates the time left for your test to get over</li>
+          <li>At the top of the screen you can see the timer which indicates the time left for your test to get over.</li>
           <li>You can change your response at anytime during the test.</li>
-          <li>Click on the next button to go to the next question</li>
+          <li>Click on the next button to go to the next question.</li>
           <li>Click on submit button to submit your response for each question.</li>
-          <li>Click on the start test button to start yor test</li>
-          <li>after submitting the test you score will be diplayed on the screen</li>
-          <li>If you clear the first level you will be able to see the next level button on the screen</li>
+          <li>Click on the start test button to start yor test.</li>
+          <li>After submitting the test you score will be diplayed on the screen.</li>
+          <li>If you clear the first level you will be able to see the next level button on the screen.</li>
         </ul>
-        <button (click)="startTest()">start test</button>
+        <button (click)="startTest()">Start Test</button>
+        <br>
+        <br>
       </div>
 </div>

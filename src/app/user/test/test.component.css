@@ -5,7 +5,7 @@ body{
 
 .timer-container{
     text-align: center;
-    background-color: #133b5c;
+    background-color: #211261;
     font-size: 2.5em;
     color: white;
 }
@@ -21,15 +21,24 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(236, 234, 234);
+    background-color:rgb(236, 234, 234);
     height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 
   }
   .questions{
+    margin-left: 10px;
+    margin-right: 10px;
       margin-top: 10px;
       margin-bottom: 50px;
+      padding-top: 10px;
+      padding-left: 42px;
       height: 50px;
       background-color: rgb(236, 234, 234);
+  }
+  .questions.q{
+    padding-left: 60px;
   }
   .button {
     color:  #133b5c; 
@@ -43,30 +52,37 @@ body{
     font-size: 16px;
   }
   .green{
-    background-color: green;
+    background-color: rgb(24, 141, 24);
+    overflow: hidden;
 }
   .container-nav>div{
       margin-left: 2.75px;
       margin-right: 2.75px;
       margin-top: 9px;
+      overflow: hidden;
   }
   .container-nav>div> button{
-      display: block;
+      
       width: 40px;
+      border-radius: 5px;
+      overflow: hidden;
   }
   .options>.green{
-    background-color: green;
+    background-color:  rgb(24, 141, 24);
 }
 .option{
-    
-    padding: 20px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     background-color: #215988;
     color: black;
     width: 40%;
     margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    width: 40%;
+    margin-bottom: 20px;
+    margin-left: 28px;
+    
   }
   .option:hover{
       cursor: pointer;
@@ -74,50 +90,120 @@ body{
   }
 
   .nav-buttons{
-      margin-top: 50px;
+      margin-left: 190px;
+      margin-top: 65px;
       display: flex;
       flex-direction: row;
   }
   .nav-buttons>button{
     display: block;
-    background-color:  #133b5c; 
+    background-color: black; 
     border: none;
+    border-radius: 10px;
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
+    size: 50%;
+    overflow: hidden;
   }
   .nav-buttons>.left{
-      margin-left: 10px;
+      margin-left: 0px;
+      margin-right: 60px;
 
   }
   .nav-buttons>.right{
       margin-right: 30%;
-      margin-left: 10px;
+      margin-left: 5px;
   }
   .nav-buttons>.hide{
     display: none;
 }
+
+.finalresult{
+  height: 750px;
+  width: 1550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/assets/images/result.jpg');
+}
+
+.finalcontent{
+  width: 35%;
+  padding-top: 200px;
+  padding-left: 200px;
+  height: 50%;
+
+}
+
+.finalresult .finalcontent button{
+background-color: black;
+color: white;
+border-radius: 10px;
+transition: all 1s;
+padding: 10px;
+text-align: center;
+margin-right: 50px;
+min-width: 90px;
+}
+
+.finalresult .finalcontent button:hover{
+  background-color: white;
+  color: black;
+  border: black 1px solid;
+}
+
+  .displayresult{
+    background-image: url('/assets/images/result.jpg');
+   
+    height: 750px;
+    width: 1550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+.displayresult>.congo{
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 30px;
+  width: 40%;
+  font-size: 20px;
+  font-style: italic;
+  position: absolute;
+ 
+
+}
+
+.displayresult>.score{
+  margin-left: 50%;
+  margin-top: 50%;
+  color: white;
+}
+
   .output{
       position: absolute;
       left: 30%;
       top: 20%;
-      background-color:#133b5c;
+      background-color: #211261;
+     
       height: 350px;
       width: 600px;
   }
-  .output>.score{
-      margin-left: 25%;
-      margin-top: 25%;
-      color: white;
-  }
+ 
+
+ 
+
   .output>.nav-buttons{
-      margin-left: 45%;
+      margin-left: 33%;
   }
   .output>.nav-buttons>button{
     display: block;
@@ -126,12 +212,14 @@ body{
     background-color: black;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 20px;
+    padding-right: 10px;
     padding-left: 10px;
+    margin-bottom: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin-right: 30px;
   }
   .output>.nav-buttons>.hide{
     display: none;
@@ -139,7 +227,8 @@ body{
   .output>h3{
       text-align: center;
       color: white;
-      margin-top: 20px;
+      background-color: #211261;
+      margin-top: 10px;
   }
   .output>.list{
       background-color: cornsilk;
