@@ -1,3 +1,4 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 body{
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,107 +11,140 @@ body{
   
     
   }
+  .topnav {
+    background-color: #211261;
+    overflow: hidden;
+    height: 80px;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 65px;
+    text-decoration: none;
+    font-size: 30px;
+  }
   
 
-    .topnav .top {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 22px 65px;
-      text-decoration: none;
-      font-size: 25px;
-    }
+  .topnav a.active:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
-    .topnav {
-      background-color: #133b5c;
-      overflow: hidden;
-      height: 80px;
-    }
-    
-    
-    .topnav a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 65px;
-      text-decoration: none;
-      font-size: 30px;
-    }
-    
-    .topnav a.top:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    .topnav a.active:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    
-    .topnav a.active {
-      float: right;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 22px 65px;
-      text-decoration: none;
-      font-size: 25px;
-    }
-
-    .logo a img{
-        margin-left: 160px;
-        padding-top: px;
-        bottom: 50px;
-        height: 70px;
-        width: 200px;
-        margin-bottom: 5px;
+  
+  .topnav a.active {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 22px 65px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+ 
       
-      }
+  .container .jumbotron{
+      margin-left: 150px;
+      margin-top: 60px;
+      padding-right: 10px;
+  }
+
+  .logo a img{
+    margin-left: 160px;
+    padding-top: px;
+    bottom: 50px;
+    height: 70px;
+    width: 200px;
+    margin-bottom: 5px;
+  
+  }
+  /*.logo a img:hover{
+    background-color: #133b5c;
+  }*/
+  
+  
+   .topnav .top1 {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  
+  .topnav .top1:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav .top2 {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  
+  .topnav .top2:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .topnav .top2.active {
+    float: right;
+  }
+  .logo a img{
+    margin-left: 240px;
+    padding-top: 20px;
+    bottom: 50px;
+    height: 70px;
+    width: 200px;
+  
+  }
 
       html,body{
         height: 100%;
       }
      
       .h{
-        height: 720px;
+        height: 500px;
       }
       
       .cust {
-       position: absolute;
-       margin-right: 20px;
-       margin-top: 1px;
-       width: 20px;
-       height: 20px;
-       padding-top: 9px;
-       padding-left:15px;
-       color: white;
-      
-      
-      }
-      .cust:hover{
-        color: black;
-        background-color: black;
-      }
+        position: absolute;
+        margin-right: 20px;
+        margin-left: 17px;
+        margin-top: 16px;
+        width: 20px;
+        height: 20px;
+        padding-top: 9px;
+        padding-left:18px;
+        color: white;
+       
+       
+       }
 
       .container{
           float:left;
-          margin-top: 40px;
+          margin-top: 5px;
           margin-left: 40px;
-          width: 30%;
-         
-         
-          
+          width: 30%;     
       }
-
-     
-
       form{
         margin-bottom: 40px;
-        margin-top: 0px;
         padding-left: 0px;
         padding-right: 20px;
         width: 150%;
-        
       }
 
       h2{
@@ -120,8 +154,7 @@ body{
 
       .right{
          
-          background-image: url(/assets/images/im2.jpg);
-          
+          background-image: url(/assets/images/studentlist2.jpg);
           float: right;
           width: 60%;
           height: 700px;
@@ -139,17 +172,11 @@ body{
         color: black;
       }
 
-      h1 b{
-        
-      background-color: black;
-        margin-right: 70px;
-        margin-top: 70px;
-
-      }
-
-      h1{
-        padding-top: 80px;
-        padding-left: 290px;
-        color:white;
+      h1 {
+        margin-right: 100px;
+        margin-top: 30px;
+        padding-top: 20px;
+        padding-left: 220px;
+        color:black;
         
       }
