@@ -8,14 +8,10 @@ body{
   background-color:transparent;
 }
 
-.logo img{
+.logo a img{
   margin-left: 240px;
   padding-top: 0px;
-  bottom: 50px;
-  height: 189px;
   width: 200px;
-  padding-bottom: 78px;
-
 }
 .topnav {
     background-color:#211261;
@@ -170,8 +166,4 @@ html,body{
  color: white;
 
 
-}
-.cust:hover{
-  color: black;
-  background-color: black;
 }

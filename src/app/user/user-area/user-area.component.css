@@ -22,7 +22,7 @@ body{
 }
 
 .topnav {
-  background-color: #133b5c;
+  background-color: #211261;
   overflow: hidden;
   height: 80px;
 }
@@ -62,13 +62,17 @@ body{
     margin-top: 60px;
 }
 
+/*.logo a img{
+  margin-left: 440px;
+  margin-top:2px;
+  width: 200px;
+}*/
 .logo a img{
-  margin-left: 160px;
-  padding-top: px;
+  margin-left: 440px;
+  padding-top: 1px;
   bottom: 50px;
   height: 70px;
   width: 200px;
-  margin-bottom: 5px;
 
 }
 .button1{
@@ -78,9 +82,10 @@ body{
   margin-bottom: 2rem;
   margin-top: 0.1rem;
   border: none;
+  margin-left: 20px;
   font-size: 1.5rem;
-  background-color: #133b5c;
-  color: rgba(255, 255, 255, 0.9);
+  background-color: white;
+  color: black;
   text-align: center;
 }
 
@@ -91,9 +96,10 @@ body{
   border-radius: 30px;
   margin-bottom: 2rem;
   border: none;
+  margin-left: 20px;
   font-size: 1.5rem;
-  background-color: #133b5c;
-  color: rgba(255, 255, 255, 0.9);
+  background-color:white;
+  color: black;
   text-align: center;
 }
   
@@ -103,11 +109,14 @@ button:hover{
 
 .container{
   border: none;
-  box-shadow: 3px 3px 5px 6px #ccc; 
+  box-shadow: 6px 6px 10px 10px rgba(128, 128, 128, 0.493); 
   width: 36%;
   margin:auto;
-  margin-top: 10rem;
+  margin-top:150px;
   backdrop-filter: blur(5px);
+  margin-left: 500px;
+  background-color:#61279e;
+  border-radius: 25px;
 }
 
 .container1{

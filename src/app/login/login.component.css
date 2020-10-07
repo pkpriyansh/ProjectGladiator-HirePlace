@@ -68,11 +68,8 @@ html,body{
 
   .logo a img{
     margin-left: 240px;
-    padding-top: 20px;
-    bottom: 50px;
-    height: 70px;
+    padding-top: 0px;
     width: 200px;
-  
   }
 
   .button1{
