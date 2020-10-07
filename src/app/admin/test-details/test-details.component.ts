@@ -27,14 +27,19 @@ export class TestDetailsComponent implements OnInit {
   }
 
   deleteTest(test:Test){
-    
-    this.adminService.deleteTestById(test.testId).subscribe(
-      data => {
-        alert("Test Deleted Successfully");
-        this.tests = this.tests.filter(u => u !==test);
-      }
-    )
 
+    let result = confirm("do you want to delete this test");
+
+    if(result){
+
+      this.adminService.deleteTestById(test.testId).subscribe(
+        data => {
+          alert("Test Deleted Successfully");
+          this.tests = this.tests.filter(u => u !==test);
+        }
+      );
+
+    }
   }
 
 }
