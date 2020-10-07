@@ -96,21 +96,33 @@
   }
   .logo a img{
     margin-left: 240px;
-    padding-top: 0px;
-    bottom: 100px;
-    height: 100px;
+    padding-top: 1px;
+    bottom: 50px;
+    height: 70px;
     width: 200px;
   
   }
-  h2{
+  h1{
       margin-left: 600px;
       margin-top:70px
   }
   table{
-      margin-left: 200px;
-      margin-right: 200px;
-      padding-right: 10px;
-      padding-left:10px ;
-      width:70%;
+      margin-left: 90px;
+      
+      padding-right: 0px;
+      padding-left:50px ;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width:85%;
       border-radius: 30px;
   }
+  button{
+    background-color: cornsilk;
+    color: black;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+  }
+  button:hover{
+    transform: scale(1.1);
+}

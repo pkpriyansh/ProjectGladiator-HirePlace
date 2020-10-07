@@ -1,9 +1,10 @@
 <div>
   <div class="topnav">
-      <i class="fas fa-home fa-3x cust"></i>
+     <!-- <i class="fas fa-home fa-3x cust"></i>
       <a href="#home" routerLink='/home'>Home</a>
-      <a href="#about"routerLink='/about'>About</a>
-      <div class="logo"><a href="#"><img src="/assets/images/logo2.jpeg"></a></div>
+      <a href="#about"routerLink='/about'>About</a>-->
+      <a class="top1" href="#logout">User Dashboard</a>
+      <div class="logo"><a href="#"><img src="/assets/images/newlogocropped.jpg"></a></div>
       <a class="active" href="#logout">Logout</a>    
   </div>
 
@@ -24,9 +25,9 @@
     </thead>
     <tbody>
     <tr *ngFor="let user of users">
-        <td>{{ user.mapEmail.firstName + ' '+ user.mapEmail.lastName |  lowercase }}</td>
-        <td>{{ user.mapTest.testName }}</td>
-        <td>{{ user.mapTest.lastDate }}</td>
+        <td>{{ user.mapEmail.firstName + ' '+ user.mapEmail.lastName |  titlecase }}</td>
+        <td>{{ user.mapTest.testName | titlecase }}</td>
+        <td>{{ user.mapTest.lastDate | date:"d MMMM, y" }}</td>
         <td>{{ user.level1Score }}</td>
         <td>{{ user.level2Score }}</td>
         <td>{{ user.level3Score }}</td>

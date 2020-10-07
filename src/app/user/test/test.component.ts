@@ -84,7 +84,9 @@ export class TestComponent implements OnInit {
     this.testService.RegisterTest(this.testRegistration).subscribe(
       data =>{
         console.log("done Registration");
-      }
+      },error => {
+        alert("You Can Not Give THe Test Again");
+        this.router.navigate(['user-area'])}
     );
     this.testService.getAllLevel1Questions().subscribe(
       data=>{

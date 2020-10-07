@@ -29,7 +29,7 @@ export class ResetAreaComponent implements OnInit {
     this.service.emailVerification(this.emailForm.controls.username.value).subscribe(
       data1 => {
         this.result=data1;
-        //alert(this.result)
+        alert(this.result)
         if(this.result == true){
           localStorage.setItem("Username", this.emailForm.controls.username.value);
           alert('Link Successfully Sent');

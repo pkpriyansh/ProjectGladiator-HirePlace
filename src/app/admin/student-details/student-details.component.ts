@@ -21,11 +21,13 @@ export class StudentDetailsComponent implements OnInit {
       this.router.navigate(['admin-login'])
     }
     this.detailsForm =this.fb.group({
-      testId:['', Validators.required],
+      testId:[''],
       state:[''],
       city:[''],
       level:[''],
-      marks:['']
+      marks:[''],
+      marksBelow:[''],
+      Pass_Fail:['']
     }
     );
   }
@@ -38,7 +40,9 @@ export class StudentDetailsComponent implements OnInit {
                                                       this.detailsForm.controls.state.value.toUpperCase(),
                                                       this.detailsForm.controls.city.value.toUpperCase(),
                                                       this.detailsForm.controls.level.value,
-                                                      this.detailsForm.controls.marks.value);
+                                                      this.detailsForm.controls.marks.value,
+                                                      this.detailsForm.controls.marksBelow.value,
+                                                      this.detailsForm.controls.Pass_Fail.value);
     
       
 

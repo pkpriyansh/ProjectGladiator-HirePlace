@@ -1,22 +1,23 @@
 <body>
     <div><div class="topnav">
-        <i class="fas fa-home fa-2x cust"></i>
-        <a class="top1" href="#home" routerLink='/home'>Home</a>
-        <a class="top2" href="#about" routerLink='/about'>About</a>
+      <!-- <i class="fas fa-home fa-2x cust"></i>
+        <a class="top1" href="#home" routerLink='/admin-area'>Home</a>
+        <a class="top2" href="#about" routerLink='/about'>About</a>--> 
+        <a class="top1" href="#home" routerLink='/admin-area'>Admin Dashboard</a>
         <div class="logo"><a href="#"><img src="/assets/images/newlogocropped.jpg"></a></div>   
         <a class="active" (click)="logout()" routerLink='/home'>Logout</a>
-        <a class="active" routerLink='/admin-area'>Dashboard</a>
+      <!--  <a class="active" routerLink='/admin-area'>Dashboard</a>-->
     </div>
 
     <div class="container">
         <div class="jumbotron">
             <div >
                 <h2 style="margin-left: 40%">Add Test</h2>
-            </div>
+            </div><br>
 
         <form [formGroup]="companyForm" (ngSubmit)="companyForm.valid && onSubmit()">
     
-
+            <br>
         <div class="form-group">
         <label for="testName">Test Name: </label>
         <input type="text" name="testName" id="testName" class="form-control input-validation-error"
@@ -105,13 +106,13 @@
 
             <div class="text-center">
                 <button class="btn btn-primary" [disabled]="companyForm.invalid">Register Company</button>   
-                </div> 
+                </div> <br>
             
             
         </form>
         </div>
         </div>
-        </div>
+        </div><br><br>
     </body>
         
             
