@@ -1,6 +1,6 @@
 @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 body{
-  background-image: url(/assets/images/im2.jpg);
+  background-image: url(/assets/images/home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -8,8 +8,8 @@ body{
   height: 100%;
   
 }
-a{
-    text-decoration: none;
+.h{
+  height: 600px;
 }
 
 .container{
@@ -25,13 +25,13 @@ a{
 .container1{
     font-size: 2.1rem;
     color: white;
-    background-color: #133b5c;
-    padding: 1.5rem;
     text-align: center;
     font-weight: bold;
-    width: 100%;
+    padding-left: 0px;
+    padding-top: 30px;
 
 }
+
 
 .container2{
     
@@ -50,20 +50,21 @@ a{
 
 input, button{
     width: 90%;
-    padding: 1rem;
+    height: 55px;
+    margin-left: 20px;
     border-radius: 30px;
     margin-bottom: 1.2rem;
     border: none;
 }
 
-button{
+.btn{
     width: 90%;
     font-size: 1.2rem;
-    color: white;
+    background-color: white;
     padding: 10px;
     align:center;
     border-radius: 30px;
-    background-color: #133b5c;
+    color: #133b5c;
 }
 
 input{
@@ -81,62 +82,113 @@ button:hover{
 }
 
 
-.container .container1 .container2{
-    backdrop-filter: blur(5px);
-  }
-  .h{
-    height: 700px;
-  }
-  .topnav .top {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 22px 65px;
-    text-decoration: none;
-    font-size: 25px;
-  }
- /* .topnav .top:hover {
-    color:black;
-    background-color: #f2f2f2;
-  }
-  .topnav .fas fa-home:hover{
-    color:black;
-    background-color: black;
-  }*/
+
   
-  .topnav .top.active {
-    float: right;
-  }
   .topnav {
-    background-color:  #133b5c;
-    color: white;
+    background-color:#211261;
     overflow: hidden;
     height: 80px;
   }
+    
+   
+  .topnav .top1 {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  
+  .topnav .top1:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .topnav .top1.active {
+    float: right;
+  }
+  
+  .topnav .top2 {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  
+  .topnav .top2:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav .top2.active {
+    float: right;
+  }  
   .logo a img{
-    margin-left: 160px;
-    padding-top: px;
+    margin-left: 240px;
+    padding-top: 20px;
     bottom: 50px;
     height: 70px;
     width: 200px;
   
   }
-  .cust {
-   position: absolute;
-   margin-right: 20px;
-   margin-top: 1px;
-   width: 20px;
-   height: 20px;
-   padding-top: 9px;
-   padding-left: 15px;
-  
+
  
+  html,body{
+    height: 100%;
   }
-  .cust:hover{
-    color: black;
-    background-color: black;
-  }
-  /*.btn{
-      color: white;
-      background-color: #133b5c;
-  }*/
+
+ 
+button:hover{
+    transform: scale(1.1);
+}
+
+.container{
+  border: none;
+  box-shadow: 6px 6px 10px 10px rgba(128, 128, 128, 0.493); 
+  width: 36%;
+  margin:auto;
+  margin-top: 5rem;
+  backdrop-filter: blur(5px);
+  margin-left: 850px;
+  background-color:#61279e;
+  border-radius: 25px;
+}
+
+.cust {
+  position: absolute;
+  margin-right: 20px;
+  margin-left: 17px;
+  margin-top: 16px;
+  width: 20px;
+  height: 20px;
+  padding-top: 9px;
+  padding-left:18px;
+  color: white;
+ 
+ }
+ 
+ 
+ .cust2 {
+  position: absolute;
+  margin-bottom: 5px;
+  margin-left: 35px;
+  margin-top: 16px;
+  width: 20px;
+  height: 10px;
+  padding-top: 2px;
+  color: black;
+ 
+ }
+ 
+
