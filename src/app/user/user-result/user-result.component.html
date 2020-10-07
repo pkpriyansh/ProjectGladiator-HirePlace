@@ -24,9 +24,9 @@
     </thead>
     <tbody>
     <tr *ngFor="let user of users">
-        <td>{{ user.mapEmail.firstName + ' '+ user.mapEmail.lastName |  lowercase }}</td>
-        <td>{{ user.mapTest.testName }}</td>
-        <td>{{ user.mapTest.lastDate }}</td>
+        <td>{{ user.mapEmail.firstName + ' '+ user.mapEmail.lastName |  titlecase }}</td>
+        <td>{{ user.mapTest.testName | titlecase }}</td>
+        <td>{{ user.mapTest.lastDate | date:"d MMMM, y" }}</td>
         <td>{{ user.level1Score }}</td>
         <td>{{ user.level2Score }}</td>
         <td>{{ user.level3Score }}</td>

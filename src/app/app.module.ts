@@ -29,7 +29,7 @@ import { NavComponent } from './nav/nav.component';
     AdminModule,
     UserModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
