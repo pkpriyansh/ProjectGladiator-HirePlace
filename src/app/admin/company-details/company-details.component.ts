@@ -48,7 +48,7 @@ export class CompanyDetailsComponent implements OnInit {
     formData.append('level3Pass', this.companyForm.get('level3Pass').value);
     formData.append('fileUrl', this.file);
     formData.append('examDate', this.companyForm.get('examDate').value);
-    alert( this.companyForm.get('examDate').value)
+    //alert( this.companyForm.get('examDate').value)
     console.log(this.companyForm.get('examDate').value)
 
     console.log(this.companyForm.controls.examDate.value);

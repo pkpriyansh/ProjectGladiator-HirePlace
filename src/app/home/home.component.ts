@@ -29,9 +29,9 @@ export class HomeComponent implements OnInit {
         if(this.test !=null){
           let todayDate = formatDate(new Date(), 'yyyy-MM-dd', 'en_US');
           let testDate = formatDate(this.test.lastDate, 'yyyy-MM-dd', 'en_US');
-          alert("test if condition")
+          //alert("test if condition")
           if(todayDate != testDate){
-            alert("date if condition")
+            //alert("date if condition")
             sessionStorage.clear();
             this.router.navigate(['home']);
           }else{

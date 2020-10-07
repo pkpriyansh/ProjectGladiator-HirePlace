@@ -44,7 +44,7 @@ export class StudentDetailsComponent implements OnInit {
 
     this.searchService.sendDetails(user).subscribe(data =>{
       this.students = data;
-      alert(JSON.stringify(this.students));
+      //alert(JSON.stringify(this.students));
     });
   }
 
