@@ -24,15 +24,9 @@
         
                             <label for="testId">Test Id:</label>
                             
-                            <input type="number" name="testId" id="testId" class="form-control input-validation-error" formControlName="testId" [ngClass]="{'is-invalid':
-                            detailsForm.get('testId').touched && detailsForm.get('testId').invalid}">
+                            <input type="number" name="testId" id="testId" class="form-control" formControlName="testId">
                                 
-                                
-        <div style="color: rgba(255, 0, 55, 0.966);" *ngIf="detailsForm.controls.testId.invalid && 
-        (detailsForm.controls.testId.touched || detailsForm.controls.testId.dirty)">       
-         <h6>*Test Id is required</h6>      
-</div>
-</div>
+                        </div>
 <div class="form-group">
         
     <label for="state">State:</label>
@@ -94,11 +88,24 @@
         </select>
            
     </div>
+    <div class="form-group">
+        
+        <label for="Pass_Fail">Cleared/Not-Cleared</label>
+        
+        <select name="Pass_Fail" id="Pass_Fail" class="form-control" formControlName="Pass_Fail">
+            <option value="1">Cleared</option>
+            <option value="2">Not-Cleared</option>
+        </select>
+           
+    </div>
 
-<div class="form-group">
-                   
-    <label for="marks">Marks Above:</label>
-    <input class="form-control" type="number" name="marks" id="marks" formControlName="marks">
+    <div class="form-group">
+        <label for="marks">Marks Equal or Above:</label>
+        <input class="form-control" type="number" name="marks" id="marks" formControlName="marks">
+    </div>
+    <div class="form-group">
+        <label for="marksBelow">Marks Below:</label>
+        <input class="form-control" type="number" name="marksBelow" id="marksBelow" formControlName="marksBelow">
     </div>
 
     <div class="text-center">
@@ -117,12 +124,12 @@
 
 <div class="right">
 <div class="col-lg-12">
-  <h1>CANDIDATE DETAILS</h1>
-  <table class="table table-hover">
+  <h1>Candidate Details</h1>
+  <table class="table table-hover" *ngIf="students != null">
     <thead>
     <tr>
         <th>Email</th>
-        <th>TestId</th>
+        <th>Test Name</th>
         <th>First Name</th>
         <th>Last Name</th>
         <th>Level 1 score</th>
@@ -132,10 +139,10 @@
     </thead>
     <tbody>
         <tr *ngFor="let student of students">
-            <td>{{ student.mapEmail.email }}</td>
-            <td>{{ student.mapTest.testId }}</td>
-            <td>{{ student.mapEmail.firstName }}</td>
-            <td>{{ student.mapEmail.lastName }}</td>
+            <td>{{ student.mapEmail.email | lowercase }}</td>
+            <td>{{ student.mapTest.testName | titlecase }}</td>
+            <td>{{ student.mapEmail.firstName | titlecase }}</td>
+            <td>{{ student.mapEmail.lastName | titlecase }}</td>
             <td>{{ student.level1Score }}</td>
             <td>{{ student.level2Score }}</td>
             <td>{{ student.level3Score }}</td>

@@ -27,12 +27,12 @@
       <tbody>
       <tr *ngFor="let test of tests, let i = index">
           <td>{{test.testId}}</td>
-          <td>{{ test.testName}}</td>
-          <td>{{ test.companyName}}</td>
+          <td>{{ test.testName | titlecase}}</td>
+          <td>{{ test.companyName | titlecase}}</td>
           <td>{{ test.level1Pass}}</td>
           <td>{{ test.level2Pass}}</td>
           <td>{{ test.level3Pass}}</td>
-          <td>{{ test.lastDate}}</td>
+          <td>{{ test.lastDate | date: 'd MMMM, y'}}</td>
           <td><button  (click)="deleteTest(test)">Remove Test</button></td>
       </tr>
       </tbody>
