@@ -21,10 +21,6 @@ export class TestComponent implements OnInit {
   selectedOptions;
   recordedOptions=[];
   score:number;
- // level1Score:number;
-  //level2Score:number;
-  //level3Score:number;
-
 
   hideSubmit:boolean;
   hideNext:boolean;
@@ -53,7 +49,7 @@ export class TestComponent implements OnInit {
   ngOnInit(): void {
 
     if(sessionStorage.getItem("Username")== null){
-      this.router.navigate(['user-login'])
+      this.router.navigate(['user-login']);
     }
 
     this.testRegistration = new TestRegistrationDto();
@@ -133,11 +129,13 @@ export class TestComponent implements OnInit {
   logout(){
     this.testService.updateTestRegistration(this.testRegistration).subscribe(
       data=>{
-        console.log("level1")
+        console.log("logout");
+        sessionStorage.clear();
+        localStorage.clear();
+        this.router.navigate['home'];
       }
     );
-    sessionStorage.clear();
-    this.router.navigate['home'];
+    
   }
   
   submitTest(){
@@ -146,10 +144,6 @@ export class TestComponent implements OnInit {
         this.score++;
       }
     }
-    /* if(this.testLevel==4){
-      this.isLevel4=true
-    }*/
-   
     if(this.testLevel==1)
     {
       this.score=this.score*5;
@@ -176,7 +170,7 @@ export class TestComponent implements OnInit {
           console.log("level2")
         }
       )
-      if(this.testRegistration.level2Score>this.test.level2Pass)
+      if(this.testRegistration.level2Score>=this.test.level2Pass)
       {
         this.isPassed=true;
       }
@@ -195,21 +189,6 @@ export class TestComponent implements OnInit {
         this.isPassed=true;
       }
     }
-    /*if(this.score>=5 && this.testLevel==2)
-    {
-      this.level2Score=this.score;
-      this.isPassed=true;
-      this.testLevel++;
-    }
-    if(this.score>=2 && this.testLevel==3)
-    {
-      this.level3Score=this.score;
-      this.isPassed=true;
-      this.testLevel++;
-      if(this.testLevel==4){
-        this.isLevel4=true
-      }
-    }*/
     this.testLevel++;
     this.hideTest=true;
     this.isSubmit=false;

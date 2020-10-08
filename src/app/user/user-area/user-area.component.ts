@@ -1,3 +1,4 @@
+import { CandidateRegistration } from './../../model/CandidateRegistration';
 import { Test } from './../../model/Test';
 import { UserService } from './../user.service';
 import { Router } from '@angular/router';
@@ -12,18 +13,21 @@ import { Component, OnInit } from '@angular/core';
 export class UserAreaComponent implements OnInit {
   isNoTest:boolean=false;
   test:Test;
+  candidate:CandidateRegistration;
   constructor(private router:Router, private userService:UserService) { }
 
   ngOnInit(): void {
     if(sessionStorage.getItem("Username")== null){
       this.router.navigate(['user-login'])
     }
-    //console.log(sessionStorage.getItem("Username"));
-    console.log(sessionStorage.getItem("testid"));
     if(sessionStorage.getItem("testid")=='null'){
-      console.log(sessionStorage.getItem("testid"));
       this.isNoTest=true;
     }
+    this.userService.getCandidateById().subscribe(
+      data=>{
+        this.candidate = data;
+      }
+    )
   }
 
   logout(){
