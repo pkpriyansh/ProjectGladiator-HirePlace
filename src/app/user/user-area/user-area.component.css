@@ -45,6 +45,9 @@ body{
 .topnav a.active:hover {
   background-color: #ddd;
   color: black;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 40px;
 }
 
 
@@ -52,9 +55,12 @@ body{
   float: right;
   color: #f2f2f2;
   text-align: center;
-  padding: 22px 65px;
+
+  margin: 0px;
   text-decoration: none;
   font-size: 25px;
+
+
 }
     
 .container .jumbotron{
@@ -62,17 +68,33 @@ body{
     margin-top: 60px;
 }
 
+span{
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: green;
+}
+
 /*.logo a img{
   margin-left: 440px;
   margin-top:2px;
   width: 200px;
 }*/
+
+.logo{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
 .logo a img{
   margin-left: 620px;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
   width: 200px;
-  margin-bottom: 3px;
+  
+  margin-top: 0px;
+  margin-bottom: 0px;
   padding-top: 0px;
+ 
 }
 
 .button1{
