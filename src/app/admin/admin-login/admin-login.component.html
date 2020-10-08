@@ -4,7 +4,7 @@
             <i class="fas fa-home fa-2x cust"></i>
             <a class="top1" href="#home" routerLink="/home">Home</a>
             <a class="top2" href="#about" routerLink="/about">About Us</a>
-            <div class="logo"><a href="#"><img src="/assets/images/newlogocropped.jpg"></a></div>
+            <div class="logo"><a><img src="/assets/images/lg.jpg"></a></div>
             
             
             
@@ -22,14 +22,16 @@
 
                 <form [formGroup] = "adminLoginForm" (submit) ="onLogin()" >
                     <div>          
-                    <p class = "validate" *ngIf = "adminLoginForm.controls.username.errors && (adminLoginForm.controls.username.touched || adminLoginForm.controls.username.dirty)">*Username required</p> 
+                   
                     <i class="fas fa-user fa-2x cust2"></i> 
-                    <input type="text" placeholder=" Username" formControlName = "username" > <br>
+                    <input type="text" placeholder=" UserName" formControlName = "username" > <br>
+                    <p class = "validate" style="color:red"  *ngIf = "adminLoginForm.controls.username.errors && (adminLoginForm.controls.username.touched || adminLoginForm.controls.username.dirty)">*Username required</p> 
                 </div>
                 <div>
-                    <p class = "validate" *ngIf = "adminLoginForm.controls.password.errors && (adminLoginForm.controls.password.touched || adminLoginForm.controls.password.dirty)">*Password required</p> 
+                   
                     <i class="fas fa-lock fa-2x cust2"></i> 
-                    <input type="password" placeholder="password" formControlName = "password"> 
+                    <input type="password" placeholder="Password" formControlName = "password"> 
+                    <p class = "validate" style="color: red;"  *ngIf = "adminLoginForm.controls.password.errors && (adminLoginForm.controls.password.touched || adminLoginForm.controls.password.dirty)">*Password required</p> 
                 </div>
                 <div>
                     <button class="btn" type="submit" [disabled] ="adminLoginForm.invalid">Login</button>

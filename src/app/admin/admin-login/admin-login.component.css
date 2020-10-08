@@ -65,14 +65,19 @@ input, button{
     align:center;
     border-radius: 30px;
     color: #133b5c;
+    overflow: hidden;
 }
 
 input{
     background-color: rgb(235, 235, 243);
     font-size: 1rem;
     padding-left: 80px;
+    overflow: hidden;
 }
 
+.validate{
+  padding-left: 35px;
+}
 
 
 
@@ -135,10 +140,10 @@ button:hover{
     float: right;
   }  
   .logo a img{
-    margin-left: 240px;
-    padding-top: 5px;
+    margin-left: 280px;
+    padding-top: 22px;
     bottom: 50px;
-    height: 70px;
+    height: 73px;
     width: 200px;
   
   }

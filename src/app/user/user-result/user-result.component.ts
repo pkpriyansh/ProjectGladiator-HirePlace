@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { TestRegistration } from './../../model/TestRegistration';
 import { UserService } from './../user.service';
 
@@ -12,7 +13,7 @@ export class UserResultComponent implements OnInit {
 
   users:TestRegistration[];
   email:string;
-  constructor(private userService:UserService) { }
+  constructor(private userService:UserService, private router:Router) { }
 
   ngOnInit(): void {
     this.email = sessionStorage.getItem("Username")
@@ -20,6 +21,19 @@ export class UserResultComponent implements OnInit {
       this.users = data;
       });
 
+
+
+  }
+
+  dashboard(){
+    this.router.navigate(['user-area'])
+
+  }
+
+  logout(){
+    sessionStorage.clear();
+    localStorage.clear();
+    this.router.navigate(['home'])
   }
 
 }

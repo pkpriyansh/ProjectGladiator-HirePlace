@@ -21,8 +21,8 @@ body{
       margin-top: 0.1rem;
       border: none;
       font-size: 1.5rem;
-      -color: #133b5c;
-      backgroundcolor: rgba(255, 255, 255, 0.9);
+      color: #133b5c;
+      background-color: rgba(255, 255, 255, 0.9);
       text-align: center;
     }
   

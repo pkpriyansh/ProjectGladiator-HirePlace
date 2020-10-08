@@ -4,7 +4,7 @@
         <a class="top1" href="#home" routerLink='/admin-area'>Home</a>
         <a class="top2" href="#about" routerLink='/about'>About</a>--> 
         <a class="top1" href="#home" routerLink='/admin-area'>Admin Dashboard</a>
-        <div class="logo"><a href="#"><img src="/assets/images/newlogocropped.jpg"></a></div>   
+        <div class="logo"><a><img src="/assets/images/newlogocropped.jpg"></a></div>   
         <a class="active" (click)="logout()" routerLink='/home'>Logout</a>
       <!--  <a class="active" routerLink='/admin-area'>Dashboard</a>-->
     </div>
@@ -95,7 +95,7 @@
             <label for="examDate">Exam Date: </label>
             <input type="date" name="examDate" id="examDate" class="form-control input-validation-error"
             formControlName="examDate" required [ngClass]="{'is-invalid':
-            companyForm.get('examDate').touched && companyForm.get('examDate').invalid}">{{companyForm.get('examDate').value}}
+            companyForm.get('examDate').touched && companyForm.get('examDate').invalid}">
       
             <div style="color: red;" *ngIf="companyForm.controls.examDate.invalid && (companyForm.controls.examDate.dirty || companyForm.controls.examDate.touched)"
              >*Exam Date is required.</div>

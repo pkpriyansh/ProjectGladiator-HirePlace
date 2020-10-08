@@ -68,13 +68,13 @@ body{
   width: 200px;
 }*/
 .logo a img{
-  margin-left: 440px;
-  padding-top: 1px;
-  bottom: 50px;
-  height: 70px;
+  margin-left: 620px;
+  padding-bottom: 15px;
   width: 200px;
-
+  margin-bottom: 3px;
+  padding-top: 0px;
 }
+
 .button1{
   width: 60%;
   padding: 1rem;

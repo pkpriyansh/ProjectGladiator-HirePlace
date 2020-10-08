@@ -185,10 +185,7 @@ html,body{
 
 
 }
-.cust:hover{
-  color: black;
-  background-color: black;
-}
+
 
 .example-spacer {
   flex: 1 1 auto;

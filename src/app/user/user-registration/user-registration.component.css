@@ -91,17 +91,26 @@
       padding-right: 10px;
       width: 86%;
   }
-
-   .logo img{
-    margin-left: 200px;
-    padding-top: 10px;
-    padding-bottom: 80px;
-   margin-bottom: 50px;
-   align-content: center;
-    height: 180px;
-    width: 250px;
   
+
+  .topnav .logo{
+    margin-top: 20px;
+    
+   
+
   }
+
+  .logo img{
+    margin-left: 250px;
+   
+    width: 200px;
+    align-content: center;
+    
+    
+  }
+
+
+
   .cust {
     position: absolute;
     margin-left: 16px;
